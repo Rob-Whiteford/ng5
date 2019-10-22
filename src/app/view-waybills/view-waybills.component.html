@@ -1,0 +1,47 @@
+<div class="container color-dark">
+    <div class="col">
+        <p>view-waybills workseee!!</p>
+    </div>
+</div>
+<div class="container color-light">
+        <div class="col">
+            <p>Change a reference number</p>
+            <form>
+                <input type="text" class="txt" name="item" placeholder="Reference Number..." #ReferenceNumber>
+                <input type="submit" class="btn" value="Save Reference" (click)="saveWaybill(ReferenceNumber.value)">
+            </form>
+        </div>
+    </div>
+    <br>
+    <div class="container color-light">
+        <div class="col">
+            <p>Change a reference number</p>
+            <form>
+                <select id="Id" #Id="ngModel" class="txt" [(ngModel)]="nameId" name="Id" >  
+                    //<option selected="" value=""></option>  
+                    <option [ngValue]="waybill.WaybillNumber" *ngFor="let waybill of waybills">  
+                        {{ waybill.WaybillNumber }}  
+                    </option>  
+                </select>  
+                <!-- <input type="text" class="txt" name="item" placeholder="Reference Number..." #ReferenceNumber> -->
+                <input type="submit" class="btn" value="Save Reference" (click)="saveWaybill(ReferenceNumber.value)">
+            </form>
+        </div>
+    </div>
+    <br>
+    <div class="container color-light">
+        <div class="col">
+            <p>The grid</p>
+
+            <div style="width: 200px;">
+                <!-- <ag-grid-angular #agGrid style="width: 100%; height: 100px;" class="ag-theme-balham"
+                            [gridOptions]="gridOptions">
+                </ag-grid-angular> -->
+            </div>
+
+        </div>
+
+    </div>
+
+
+

@@ -1,0 +1,23 @@
+<p>fetchdata works!</p>
+
+
+<p>This component demonstrates fetching data from the server.</p>
+ 
+
+
+<select>
+    <option *ngFor="let serviceType of serviceTypes" [value]="serviceType.Code">{{ serviceTypes.Code }}</option>
+</select>
+<br><br>
+<select id="Id" #Id="ngModel" class="hideLabel form-control" [(ngModel)]="nameId" name="Id" >  
+  //<option selected="" value=""></option>  
+  <option [ngValue]="serviceType.Code" *ngFor="let serviceType of serviceTypes">  
+    {{ serviceType.Description }}  
+  </option>  
+</select>  
+<br><br>
+<ul>
+  <li *ngFor="let serviceType of serviceTypes">
+      {{ serviceType.Description }}
+  </li>
+</ul>
