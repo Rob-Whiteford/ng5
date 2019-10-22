@@ -8,6 +8,6 @@ export interface Waybill {
     TotalParcels: string;
     TotalMass:string;
     XRef:string;
-    Date:string;
+    WaybillDate:string;
     Time: string;
 }

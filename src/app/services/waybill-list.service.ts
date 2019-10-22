@@ -14,7 +14,7 @@ import {Waybill} from '../models/waybill';
 
 export class WaybillListService {
 
-  private baseUrl = 'https://api.myjson.com/bins/1fq7dc';
+  private baseUrl =  'https://api.myjson.com/bins/mcbf4'; //'https://api.myjson.com/bins/605t4';
 
   constructor(private _http: HttpClient) { }
 
