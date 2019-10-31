@@ -1,0 +1,151 @@
+<div class="container color-dark">
+    <div class="col">
+        <p>Fill in all waybill details</p>
+    </div>
+</div>
+<br>
+
+<div class="container color-light"
+    style="display:flex; flex-direction: row; justify-content: center; align-items: center">
+    <div class="col" style="text-align: center;  height: 500px;">
+
+        <div class="wb_grid_data_6col">
+            <div>
+                Waybill Date:&nbsp;
+            </div>
+            <div>
+                <kendo-datepicker class="txt" [format]="'yyyy/MM/dd'" [value]="DefaultWaybillDate">
+                </kendo-datepicker>
+            </div>
+            <div>
+                Waybill Number:&nbsp;
+            </div>
+            <div><input type="text" class="txt" name="item" placeholder="Waybill Number..." #WaybillNumber>
+
+            </div>
+            <div>
+                Customer Ref.:&nbsp;
+            </div>
+            <div><input type="text" class="txt" name="item" placeholder="Reference Number..." #WaybillNumber>
+
+            </div>
+            <div>
+                Sender:&nbsp;
+            </div>
+            <div>
+                <kendo-dropdownlist [popupSettings]="{ height: 300, width: 300 }"
+                    [placeholder]="'Start typing to see sites...'" #SenderList [filterable]="true" [data]="siteListData"
+                    [textField]="'SiteName'" [valueField]="'SiteCode'">
+                </kendo-dropdownlist>
+            </div>
+            <div>
+                Receiver:&nbsp;
+            </div>
+            <div>
+                <kendo-dropdownlist [popupSettings]="{ height: 300, width: 300 }"
+                    [placeholder]="'Start typing to see sites...'" #ReceiverList [filterable]="true"
+                    [data]="siteListData" [textField]="'SiteName'" [valueField]="'SiteCode'">
+                </kendo-dropdownlist>
+            </div>
+            <div>
+                Service Type:&nbsp;
+            </div>
+            <div>
+                <kendo-dropdownlist [data]="serviceTypes" [textField]="'Code'" [valueField]="'Description'">
+                </kendo-dropdownlist>
+            </div>
+        </div>
+
+        <div id="grid">
+            <form novalidate #myForm="ngForm">
+                <kendo-grid #WaybillItems [kendoGridBinding]="gridData" [pageSize]="50" [pageable]="false"
+                    [sortable]="false" [filterable]="false" [groupable]="false" [height]="300" [selectable]="true"
+                    (dataStateChange)="onStateChange($event)" (edit)="editHandler($event)"
+                    (cancel)="cancelHandler($event)" (save)="saveHandler($event)" (remove)="removeHandler($event)"
+                    (add)="addHandler($event, myForm)" [pageSize]="gridState.take" [skip]="gridState.skip"
+                    [sort]="gridState.sort" [navigable]="true">
+
+                    <ng-template kendoGridToolbarTemplate >
+                        <button class="k-grid-toolbar" kendoGridAddCommand>Add new</button>
+                        <!-- <button class='k-button' (click)="saveChanges(grid);">Save Changes</button>
+                    <button class='k-button' (click)="cancelChanges(grid);">Cancel Changes</button> -->
+                    </ng-template>
+
+                    <kendo-grid-column title="Quantity" field="ItemQuantity" [width]="50">
+                        <ng-template kendoGridEditTemplate let-dataItem="dataItem">
+                            <input [(ngModel)]="dataItem.ItemQuantity" kendoGridFocusable name="ItemQuantity"
+                                class="k-textbox" type="number" required />
+                        </ng-template>
+                    </kendo-grid-column>
+
+                    <kendo-grid-column title="Description" field="ItemDescription" [width]="200">
+                        <ng-template kendoGridEditTemplate let-dataItem="dataItem">
+                            <input [(ngModel)]="dataItem.ItemDescription" kendoGridFocusable name="ItemDescription"
+                                class="k-textbox" required />
+                        </ng-template>
+                    </kendo-grid-column>
+
+                    <kendo-grid-column title="Length" field="ItemLength" [width]="50">
+                        <ng-template kendoGridEditTemplate let-dataItem="dataItem">
+                            <input [(ngModel)]="dataItem.ItemLength" kendoGridFocusable name="ItemLength"
+                                class="k-textbox" type="number" required />
+                        </ng-template>
+                    </kendo-grid-column>
+
+                    <kendo-grid-column title="Width" field="ItemWidth" [width]="50" editor="numeric" type="number">
+                        <ng-template kendoGridEditTemplate let-dataItem="dataItem">
+                            <input [(ngModel)]="dataItem.ItemWidth" kendoGridFocusable name="ItemWidth"
+                                class="k-textbox" type="number" required />
+                        </ng-template>
+                    </kendo-grid-column>
+
+                    <kendo-grid-column title="Height" field="ItemHeight" [width]="50" editor="numeric">
+                        <ng-template kendoGridEditTemplate let-dataItem="dataItem">
+                            <input [(ngModel)]="dataItem.ItemHeight" kendoGridFocusable name="ItemHeight"
+                                class="k-textbox" type="number" required />
+                        </ng-template>
+                    </kendo-grid-column>
+
+                    <kendo-grid-column title="Mass" field="ItemMass" [width]="50">
+                        <ng-template kendoGridEditTemplate let-dataItem="dataItem">
+                            <input [(ngModel)]="dataItem.ItemMass" kendoGridFocusable name="ItemMass" class="k-textbox"
+                                type="number" required />
+                        </ng-template>
+                    </kendo-grid-column>
+
+                    <kendo-grid-command-column title="Options" width="220">
+                        <ng-template kendoGridCellTemplate let-isNew="isNew">
+                            <!-- edit the command directive, will be visible when not in edit mode -->
+                            <button kendoGridEditCommand [primary]="true">Edit</button>
+                            <!-- remove the command directive, will be visible when not in edit mode -->
+                            <button kendoGridRemoveCommand>Remove</button>
+                            <!-- save the command directive, will be visible when in edit mode -->
+                            <button kendoGridSaveCommand>{{ isNew ? 'Add' : 'Update' }}</button>
+                            <!-- cancel the command directive, will be visible when in edit mode -->
+                            <button kendoGridCancelCommand>{{ isNew ? 'Discard changes' : 'Cancel' }}</button>
+                        </ng-template>
+                    </kendo-grid-command-column>
+
+                </kendo-grid>
+            </form>
+        </div>
+
+
+        <!-- </div> -->
+        <br>
+        <div class="wb_grid_footer">
+            <div>
+                <!-- spacer -->
+                <input type="submit" class="btn" value="Refresh Grid" (click)="refreshGrid()">
+            </div>
+            <div>
+                <input type="submit" class="btn" value="Cancel" (click)="refreshPage()">
+            </div>
+            <div>
+                <input type="submit" class="btn" value="Save" (click)="refreshPage()">
+            </div>
+        </div>
+
+    </div>
+
+</div>

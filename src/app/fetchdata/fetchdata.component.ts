@@ -16,7 +16,7 @@ export class FetchDataComponent {
  getServiceTypes(): void {
    this._testService.getServiceTypes().subscribe(data => {
      if(data) {
-       this.serviceTypes = data.ServiceType;
+       //this.serviceTypes = data.ServiceType;
        this.isLoaded = true;
        console.log('List of Service Types', this.serviceTypes);
      }

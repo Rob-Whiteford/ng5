@@ -1,0 +1,40 @@
+<div class="container color-dark">
+    <div class="col">
+        <p>manifests works!!</p>
+    </div>
+</div>
+<br>
+<div class="container color-light"
+    style="display:flex; flex-direction: row; justify-content: center; align-items: center">
+    <div class="col" style="text-align: center;border-style: groove">
+        <p>Kendo grid</p>
+
+        <div style="width: 1200px;height: 600px;border-style: dotted;text-align: center">
+
+            <kendo-toolbar>
+                <kendo-toolbar-button [text]="'Button'"></kendo-toolbar-button>
+                <kendo-toolbar-button [text]="'Toggle'" [toggleable]="true"></kendo-toolbar-button>
+                <kendo-toolbar-splitbutton [text]="'Split Button'" [data]="splitButtonData">
+                </kendo-toolbar-splitbutton>
+                <kendo-toolbar-dropdownbutton [text]="'DropDownButton'" [data]="dropdownButtonData">
+                </kendo-toolbar-dropdownbutton>
+                <kendo-toolbar-buttongroup [selection]="'single'">
+                    <kendo-toolbar-button [toggleable]="true" [icon]="'align-left'"></kendo-toolbar-button>
+                    <kendo-toolbar-button [toggleable]="true" [icon]="'align-center'"></kendo-toolbar-button>
+                    <kendo-toolbar-button [toggleable]="true" [icon]="'align-right'"></kendo-toolbar-button>
+                    <kendo-toolbar-button [toggleable]="true" [icon]="'align-justify'"></kendo-toolbar-button>
+                </kendo-toolbar-buttongroup>
+            </kendo-toolbar>
+
+            <kendo-grid [kendoGridBinding]="gridData" [pageSize]="10" [pageable]="true" [sortable]="true"
+                [filterable]="true" [groupable]="true" [height]="550" [selectable]="true">
+                <kendo-grid-checkbox-column showSelectAll="true" [width]="25"></kendo-grid-checkbox-column>
+                <kendo-grid-column title="Manifest Number" field="WaybillNumber" [width]="140"></kendo-grid-column>
+                <kendo-grid-column title="Manifest Date" field="WaybillDate" [width]="120"></kendo-grid-column>
+                <kendo-grid-column field="Depot" [width]="100"></kendo-grid-column>
+                <kendo-grid-column field="Comment" [width]="130"></kendo-grid-column>
+                <kendo-grid-column field="Status" [width]="130"></kendo-grid-column>
+            </kendo-grid>
+        </div>
+    </div>
+</div>

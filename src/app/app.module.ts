@@ -10,8 +10,15 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { HelpComponent } from './help/help.component';
 import { ViewWaybillsComponent } from './view-waybills/view-waybills.component';
+import { CaptureWaybillComponent } from './capture-waybill/capture-waybill.component';
+import { ManifestsComponent } from './manifests/manifests.component';
 import { FetchDataComponent } from './fetchdata/fetchdata.component';
 import { AgGridModule } from 'ag-grid-angular';
+import { GridModule } from '@progress/kendo-angular-grid';
+import { ToolBarModule } from '@progress/kendo-angular-toolbar';
+import { DateInputsModule } from '@progress/kendo-angular-dateinputs';
+import { DropDownsModule } from '@progress/kendo-angular-dropdowns';
+//import { LabelModule } from '@progress/kendo-angular-label';
 
 @NgModule({
   declarations: [
@@ -20,6 +27,8 @@ import { AgGridModule } from 'ag-grid-angular';
     AboutComponent,
     HelpComponent,
     ViewWaybillsComponent,
+    CaptureWaybillComponent,
+    ManifestsComponent,
     FetchDataComponent
   ],
   imports: [
@@ -28,7 +37,12 @@ import { AgGridModule } from 'ag-grid-angular';
     AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
-    AgGridModule.withComponents([])
+    AgGridModule.withComponents([]),
+    GridModule,
+    ToolBarModule,
+    DateInputsModule,
+    DropDownsModule
+
   ],
   providers: [DataService],
   bootstrap: [AppComponent],

@@ -1,3 +1,4 @@
+
 .container {
     display: grid;
     grid-template-columns: 50% auto;
@@ -14,13 +15,14 @@
 input.txt{
     border: 0;
     padding: 1em;
-    width: 80%;
+    width: 200px;
+    height: 30px;
     margin-bottom: 2em;
 }
 input.btn{
     border: 0;
     display: block;
-    padding: 1em 1em;
+    padding: 1em 3em;
     background: #A5F883;
     color: #003A61;
     margin-bottom: 1em;
@@ -32,3 +34,8 @@ input.btn{
     font-weight: bold;
     cursor: pointer;
 }
+
+.box {
+    display: flex;
+    justify-content: space-between;
+  }

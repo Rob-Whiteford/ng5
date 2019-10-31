@@ -5,6 +5,12 @@ import { GridOptions } from 'ag-grid-community';
 import { AgGridAngular } from 'ag-grid-angular';
 import {HttpClient, HttpParams} from '@angular/common/http';
 import { async } from '@angular/core/testing';
+import { Observable } from 'rxjs';
+
+import { GridModule } from '@progress/kendo-angular-grid';
+import { GridDataResult, DataStateChangeEvent , PageChangeEvent} from '@progress/kendo-angular-grid';
+import { State } from '@progress/kendo-data-query';
+import { LineItem } from '../models/lineitem.model';
 
 @Component({
   selector: 'app-view-waybills',
@@ -15,7 +21,7 @@ import { async } from '@angular/core/testing';
 @NgModule({
   declarations: [
   ],
-  imports: [
+  imports: [GridModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
@@ -25,22 +31,182 @@ import { async } from '@angular/core/testing';
 export class ViewWaybillsComponent implements OnInit {
   [x: string]: any;
 
+  private gridApi;
+  private gridColumnApi;
+
+  private columnDefs;
+  private rowData;
+  private defaultColDef;
+  private pinnedTopRowData;
+  private pinnedBottomRowData;
+
+  // Grid Variables
   waybills : Waybill[];
   isLoaded = false;
 
+  public lineItemData: Array<LineItem> = [];
+
   private gridOptions: GridOptions;
+  private gridColumnDefs : any;
+  private gridRowData : any;
+  public pageSize = 10;
+  public skip = 0
+
+  public gridData: any[] ;
+
+public view: Observable<GridDataResult>;
+    public state: State = {
+        skip: 0,
+        take: 5
+    };
+
+  // Toolbar Variables
+  public splitButtonData: Array<any> = [{
+      text: 'Option 1'
+  }, {
+      text: 'Option 2',
+  }, {
+      text: 'Option 3',
+  }];
+
+  public dropdownButtonData: Array<any> = [{
+      text: 'Option 1'
+  }, {
+      text: 'Option 2',
+  }, {
+      text: 'Option 3',
+  }];
 
 
+  
   constructor(private _callService: WaybillListService, private http: HttpClient) {
 
 
+      var list = ["foo", "bar"];
+      list.push("baz", "qux", "etcetera");
+ 
+
+    let myLineItem: LineItem[]=[];
+    this.myLineItem = [];
+
+    this.lineItemData.push({ItemQuantity: "1",ItemDescription: "1",ItemLength: "1",ItemWidth: "1",ItemHeight: "1",ItemMass: "1"});
+    this.lineItemData.push({ItemQuantity: "2",ItemDescription: "2",ItemLength: "2",ItemWidth: "2",ItemHeight: "2",ItemMass: "2"});
+
+
+
+    //this.pinnedTopRowData = getPinnedTopData();
+    //this.pinnedBottomRowData = getPinnedBottomData();
+
    }
 
+
+   
   ngOnInit() {
 
     this.getWaybills();
 
+
+    this.lineItemGridOptions = <GridOptions>{};
+    this.lineItemGridOptions.columnDefs = [
+      {
+        headerName: 'Quantity',
+        field: "ItemQuantity",
+        width: 100,
+        cellStyle: {border: 'solid', borderTopWidth: '0.1px', borderRightWidth: '0.1px', borderLeftWidth: '0.1px', borderBottomWidth: '0.1px'}
+ 
+      },
+      {
+        headerName: 'Item Description',
+        field: "ItemDescription",
+        width: 100,
+        cellStyle: {border: 'solid', borderTopWidth: '0.1px', borderRightWidth: '0.1px', borderLeftWidth: '0.1px', borderBottomWidth: '0.1px'}
+      },
+      {
+        headerName: 'Length',
+        field: "ItemLength",
+        width: 90,
+        cellStyle: {border: 'solid', borderTopWidth: '0.1px', borderRightWidth: '0.1px', borderLeftWidth: '0.1px', borderBottomWidth: '0.1px'}
+ 
+      },
+      {
+        headerName: 'Width',
+        field: "ItemWidth",
+        width: 70,
+        cellStyle: {border: 'solid', borderTopWidth: '0.1px', borderRightWidth: '0.1px', borderLeftWidth: '0.1px', borderBottomWidth: '0.1px'}
+ 
+      },
+      {
+        headerName: 'Height',
+        field: "ItemHeight",
+        width: 70,
+        cellStyle: {border: 'solid', borderTopWidth: '0.1px', borderRightWidth: '0.1px', borderLeftWidth: '0.1px', borderBottomWidth: '0.1px'}
+ 
+      },
+      {
+        headerName: 'Mass',
+        title: "Mass",
+        field: "ItemMass",
+        width: 70,
+        cellStyle: {border: 'solid', borderTopWidth: '0.1px', borderRightWidth: '0.1px', borderLeftWidth: '0.1px', borderBottomWidth: '0.1px'}
+ 
+      }
+    ];
+
+
+
+    this.lineItemGridOptions.rowData =  this.lineItemData;
+
+    // this.lineItemGridOptions.rowData = [
+    //   {
+    //     ItemQty: "",
+    //     ItemDesc: "",
+    //     ItemLen: "",
+    //     ItemBth: "",
+    //     ItemHgt: "",
+    //     ItemMass:"",
+    //   },
+    //   {
+    //     ItemQty: "",
+    //     ItemDesc: "",
+    //     ItemLen: "",
+    //     ItemBth: "",
+    //     ItemHgt: "",
+    //     ItemMass:"",
+    //   },
+    //   {
+    //     ItemQty: "",
+    //     ItemDesc: "",
+    //     ItemLen: "",
+    //     ItemBth: "",
+    //     ItemHgt: "",
+    //     ItemMass:"",
+    //   }, 
+    //   {
+    //     ItemQty: "",
+    //     ItemDesc: "",
+    //     ItemLen: "",
+    //     ItemBth: "",
+    //     ItemHgt: "",
+    //     ItemMass:"",
+    //   }, 
+    //   {
+    //     ItemQty: "",
+    //     ItemDesc: "",
+    //     ItemLen: "",
+    //     ItemBth: "",
+    //     ItemHgt: "",
+    //     ItemMass:"",
+    //   }      
+    // ];
+
+    this.lineItemGridOptions.defaultColDef = {
+      editable: true,
+      resizable: true
+    };
+
     this.gridOptions = <GridOptions>{};
+
+
 
     this.gridOptions.pagination = true;
     this.gridOptions.paginationPageSize = 15;
@@ -48,96 +214,7 @@ export class ViewWaybillsComponent implements OnInit {
     this.gridOptions.rowHeight = 25;
     this.gridOptions.maxBlocksInCache = 1;
 
-    // this.gridOptions.columnDefs = [
-    //           {
-    //               headerName: "Waybill Number",
-    //               field: "WaybillNumber",
-    //               width: 150,
-    //               sortable: true, 
-    //               filter: true,
-    //               checkboxSelection: true
-    //           },
-    //           {
-    //             headerName: "Waybill Date",
-    //             field: "WaybillDate",
-    //             width: 100,
-    //             sortable: true, 
-    //             filter: true
-    //           }
-    //           {
-    //               headerName: "Sender",
-    //               field: "Sender",
-    //               width: 150,
-    //               sortable: true, 
-    //               filter: true
-    //           },
-    //           {
-    //             headerName: "ServiceType",
-    //             field: "ServiceType",
-    //             width: 150,
-    //             sortable: true, 
-    //             filter: true                
-    //           },
-    //           {
-    //             headerName: "Time",
-    //             field: "Time",
-    //             width: 100,
-    //             sortable: true, 
-    //             filter: true              
-    //         },
-    //         {
-    //           headerName: "TotalMass",
-    //           field: "TotalMass",
-    //           width: 100,
-    //           sortable: true, 
-    //           filter: true              
-    //       },
-    //       {
-    //       headerName: "TotalParcels",
-    //       field: "TotalParcels",
-    //       width: 100,
-    //       sortable: true, 
-    //       filter: true              
-    //    },
-    //     {
-    //       headerName: "WaybillNumber",
-    //      field: "WaybillNumber",
-    //      width: 100,
-    //       sortable: true, 
-    //       filter: true              
-    //   },
-    //   {
-    //     headerName: "TotalParcels",
-    //     field: "TotalParcels",
-    //     width: 100,
-    //     sortable: true, 
-    //     filter: true 
-    //   },  
-    //   {
-    //     headerName: "XRef",
-    //     field: "XRef",
-    //     width: 100,
-    //     sortable: true, 
-    //     filter: true              
-    // }                   
-         
-    //];
-     
-      // this.gridOptions.rowData = [
-      //         {WaybillNumber: 'WB001254', WaybillDate: '2019/10/21', Sender: 'Puma', Receiver: 'Edgars', ServiceType: 'SDX'},
-      //         {WaybillNumber: 'WB001255', WaybillDate: '2019/10/22', Sender: 'Clover', Receiver: 'Checkers', ServiceType: 'ONX'},
-      //         {WaybillNumber: 'WB001256', WaybillDate: '2019/10/22', Sender: 'I n J', Receiver: 'Pick n Pay', ServiceType: 'ECO'},
-      //         {WaybillNumber: 'WB001257', WaybillDate: '2019/10/23', Sender: 'Nestle', Receiver: 'SPAR', ServiceType: 'ONX'}
-      //     ];
-
-        //   this.gridOptions.rowData = [
-        //     {WaybillNumber: '111', WaybillDate: '2019/10/21', Sender: 'Puma', Receiver: 'Edgars', ServiceType: 'SDX'},
-        //     {WaybillNumber: '222', WaybillDate: '2019/10/22', Sender: 'Clover', Receiver: 'Checkers', ServiceType: 'ONX'},
-        //     {WaybillNumber: '333', WaybillDate: '2019/10/22', Sender: 'I n J', Receiver: 'Pick n Pay', ServiceType: 'ECO'},
-        //     {WaybillNumber: '444', WaybillDate: '2019/10/23', Sender: 'Nestle', Receiver: 'SPAR', ServiceType: 'ONX'}
-        // ];          
-
-        this.gridColumnDefs = [
+           this.gridColumnDefs = [
           {
               headerName: "Waybill Number",
               field: "WaybillNumber",
@@ -174,20 +251,6 @@ export class ViewWaybillsComponent implements OnInit {
             sortable: true, 
             filter: true                
           },
-          // {
-          //   headerName: "TotalMass",
-          //   field: "TotalMass",
-          //   width: 100,
-          //   sortable: true, 
-          //   filter: true              
-          // },
-          // {
-          //   headerName: "TotalParcels",
-          //   field: "TotalParcels",
-          //   width: 100,
-          //   sortable: true, 
-          //   filter: true              
-          // },
           {
             headerName: "Reference",
             field: "CustomerReference",
@@ -197,76 +260,41 @@ export class ViewWaybillsComponent implements OnInit {
           }                             
         ];
 
-      //   this.gridRowData = [
-      //     {WaybillNumber: 'ccc', WaybillDate: '2019/10/21', Sender: 'Puma', Receiver: 'Edgars', ServiceType: 'SDX'},
-      //     {WaybillNumber: 'vvv', WaybillDate: '2019/10/22', Sender: 'Clover', Receiver: 'Checkers', ServiceType: 'ONX'},
-      //     {WaybillNumber: 'nnn', WaybillDate: '2019/10/22', Sender: 'I n J', Receiver: 'Pick n Pay', ServiceType: 'ECO'},
-      //     {WaybillNumber: 'mmm', WaybillDate: '2019/10/23', Sender: 'Nestle', Receiver: 'SPAR', ServiceType: 'ONX'}
-      // ];   
-         
-        //   this.gridOptions.rowData =[{
-        //     "Waybill": [
-        //       {
-        //         "WaybillNumber": "WB001777",
-        //         "WaybillDate": "2019/10/16"
-        //       },
-        //       {
-        //         "WaybillNumber": "WB001778",
-        //         "WaybillDate": "2019/10/22"
-        //       },
-        //       {
-        //         "WaybillNumber": "WB001779",
-        //         "WaybillDate": "2019/10/23"
-        //       }
-        //     ]
-        //   }
-        // ]
-
-        // this.gridOptions.rowData = [
-        //     {
-        //       "WaybillNumber": "WB001291",
-        //       "WaybillDate": "2019/10/16"
-        //     },
-        //     {
-        //       "WaybillNumber": "WB001292",
-        //       "WaybillDate": "2019/10/22"
-        //     },
-        //     {
-        //       "WaybillNumber": "WB001293",
-        //       "WaybillDate": "2019/10/23"
-        //     }
-        //   ]
-
-
-         // var myJSON = JSON.stringify(this.waybills);
-          //this.gridOptions.rowData = myJSON.toString();
-          //console.log('this.waybills', this.waybills)
-
-
-          //this.gridRowData = this.waybills.values;
-
-         
-
+      
   }
+
+    public pageChange(event: PageChangeEvent): void {
+        this.skip = event.skip;
+        this.loadItems();
+    }
 
   getWaybills(): void {
     this._callService.getWaybillList().subscribe(data => {
       if(data) {
-        this.waybills  = data.Waybill;
-        //this.gridOptions.rowData = data.Waybill.json;
-        //var myJson =  data.Waybill;
-        //console.log('myJson', this.waybills);
+        //this.waybills  = data.Waybill;
         this.isLoaded = true;
         console.log('List of Waybills', this.waybills);
-        //this.gridOptions.rowData = data.Waybill;
-        //console.log('Populate grid', JSON.stringify(myJson));
-      
         this.gridRowData = this.waybills;
+        this.gridData = this.waybills;
         console.log('Populate the grid', this.gridRowData);
 
       }
     })
   };
+
+  loopThru(): void {
+
+    console.log('nodessss ');
+    this.lineItemGridOptions.api.forEachNode( function(rowNode, index) {
+      console.log('node ' + rowNode.data.ItemDesc + ' is in the grid');
+  });
+    
+  };
+
+    // public dataStateChange(state: DataStateChangeEvent): void {
+    //     this.state = state;
+    //     //this.service.query(state);
+    // }
 
 //   getSelectedRows() {
 //     const selectedNodes = this.agGrid.api.getSelectedNodes();
