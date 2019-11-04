@@ -7,6 +7,8 @@ import { ViewWaybillsComponent } from './view-waybills/view-waybills.component';
 import { ManifestsComponent } from './manifests/manifests.component';
 import { HelpComponent } from './help/help.component';
 import { FetchDataComponent } from './fetchdata/fetchdata.component';
+import { ScanBarcodeComponent } from './scan-barcode/scan-barcode.component';
+import { DemoComponent } from './demo/demo.component';
 
 const routes: Routes = [
   {
@@ -33,6 +35,14 @@ const routes: Routes = [
     path: 'help',
     component: HelpComponent
   },
+  {
+    path: 'scan-barcode',
+    component: ScanBarcodeComponent
+  },  
+  {
+    path: 'demo',
+    component: DemoComponent
+  },    
   {
     path: 'fetchdata',
     component: FetchDataComponent

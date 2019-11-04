@@ -26,7 +26,8 @@ export class CaptureWaybillComponent implements OnInit {
   public siteListData: Array<{ SiteName: string, SiteCode: string }>;
 
   public DefaultWaybillDate: Date = new Date();
-  serviceTypes: ServiceType[];
+  public serviceTypes: ServiceType[];
+  public serviceType: ServiceType;
   lineItem: LineItem[];
 
   public lineItemData: Array<LineItem> = [];
@@ -93,7 +94,7 @@ export class CaptureWaybillComponent implements OnInit {
   getServiceTypes(): void {
     this._httpServiceTypeService.getServiceTypes().subscribe(data => {
       if (data) {
-        this.serviceTypes = data.ServiceType;
+        //this.serviceTypes = data.ServiceType;
         this.isLoaded = true;
         //console.log('List of Service Types', this.serviceTypes);
       }
@@ -103,7 +104,7 @@ export class CaptureWaybillComponent implements OnInit {
   getSites(): void {
     this._httpSiteService.getSites().subscribe(data => {
       if (data) {
-        this.siteListSource = data.Site;
+        //this.siteListSource = data.Site;
         this.isLoaded = true;
         //console.log('List of Sites', this.siteListSource);
       }

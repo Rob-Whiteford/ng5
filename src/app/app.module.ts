@@ -3,7 +3,6 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { HttpClientModule} from '@angular/common/http'
 import { DataService } from './data.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -18,7 +17,16 @@ import { GridModule } from '@progress/kendo-angular-grid';
 import { ToolBarModule } from '@progress/kendo-angular-toolbar';
 import { DateInputsModule } from '@progress/kendo-angular-dateinputs';
 import { DropDownsModule } from '@progress/kendo-angular-dropdowns';
-//import { LabelModule } from '@progress/kendo-angular-label';
+import { ScanBarcodeComponent } from './scan-barcode/scan-barcode.component';
+import { ZXingScannerModule } from '@zxing/ngx-scanner';
+import { FormatsDialogComponent } from './scan-barcode/formats-dialog/formats-dialog.component';
+import { AppInfoDialogComponent } from './scan-barcode/app-info-dialog/app-info-dialog.component';
+import { MatMenuModule, MatDialogModule } from '@angular/material';
+import { DemoComponent } from './demo/demo.component';
+import { BarecodeScannerLivestreamModule } from 'ngx-barcode-scanner';
+import { FormModalComponent } from './form-modal/form-modal.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -29,7 +37,12 @@ import { DropDownsModule } from '@progress/kendo-angular-dropdowns';
     ViewWaybillsComponent,
     CaptureWaybillComponent,
     ManifestsComponent,
-    FetchDataComponent
+    FetchDataComponent,
+    ScanBarcodeComponent,
+    FormatsDialogComponent,
+    AppInfoDialogComponent,
+    DemoComponent,
+    FormModalComponent
   ],
   imports: [
     BrowserModule,
@@ -41,11 +54,17 @@ import { DropDownsModule } from '@progress/kendo-angular-dropdowns';
     GridModule,
     ToolBarModule,
     DateInputsModule,
-    DropDownsModule
-
+    DropDownsModule,
+    ZXingScannerModule,
+    MatMenuModule,
+    MatDialogModule,
+    BarecodeScannerLivestreamModule,
+    NgbModule,
+    ReactiveFormsModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  entryComponents: [FormatsDialogComponent, AppInfoDialogComponent, FormModalComponent],
 })
 export class AppModule { }

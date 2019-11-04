@@ -1,0 +1,22 @@
+<p>demo workss!</p>
+
+<div class="wb_grid_data_2row2col">
+    <div>Div 1
+        <input type="submit" class="btn" value="Start" (click)="openFormModal()">
+    </div>
+    <div>Div 2
+        <input type="submit" class="btn" value="Stop" (click)="stopScanner()"><button class="btn"  (click)="startScanner()">Open Modal</button>
+    </div>
+    <div>Div 3
+            <kendo-grid [kendoGridBinding]="gridData" [pageSize]="10" [pageable]="true" [sortable]="true"
+             [height]="550">
+            <kendo-grid-checkbox-column [width]="25"></kendo-grid-checkbox-column>
+            <kendo-grid-column field="ScannedItem" [width]="140"></kendo-grid-column>
+        </kendo-grid>
+
+    </div>
+    <div>Div 4
+            <input #scanItem type="text" (keyup.enter)="addScanInput($event)" />
+            <barcode-scanner-livestream type="code_39" (valueChanges)="onValueChanges($event)"></barcode-scanner-livestream>
+    </div>
+</div>
