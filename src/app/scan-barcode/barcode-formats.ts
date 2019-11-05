@@ -2,6 +2,8 @@ import { BarcodeFormat } from '@zxing/library';
 
 export const formatsAvailable = [
   BarcodeFormat.CODE_128,
+  BarcodeFormat.CODE_39,
+  BarcodeFormat.CODE_93,  
   BarcodeFormat.DATA_MATRIX,
   BarcodeFormat.EAN_13,
   BarcodeFormat.EAN_8,

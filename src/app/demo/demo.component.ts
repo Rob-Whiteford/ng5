@@ -2,6 +2,7 @@ import { Component, ViewChild, AfterViewInit, OnInit } from '@angular/core';
 import { BarecodeScannerLivestreamComponent } from 'ngx-barcode-scanner';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { FormModalComponent } from 'src/app/form-modal/form-modal.component';
+import { BarcodeScannerModalComponent } from 'src/app/barcode-scanner-modal/barcode-scanner-modal.component';
 
 @Component({
   selector: 'app-demo',
@@ -28,7 +29,7 @@ export class DemoComponent implements AfterViewInit {
 
   openFormModal() {
     console.log('openFormModal');
-    const modalRef = this.modalService.open(FormModalComponent);
+    const modalRef = this.modalService.open(BarcodeScannerModalComponent);
     modalRef.componentInstance.id = 10; // should be the id
     
     modalRef.result.then((result) => {

@@ -18,11 +18,14 @@ export class ScanBarcodeComponent implements OnInit {
 
   formatsEnabled: BarcodeFormat[] = [
     BarcodeFormat.CODE_128,
+    BarcodeFormat.CODE_39,
+    BarcodeFormat.CODE_93,  
     BarcodeFormat.DATA_MATRIX,
     BarcodeFormat.EAN_13,
+    BarcodeFormat.EAN_8,
+    BarcodeFormat.ITF,
     BarcodeFormat.QR_CODE,
-    BarcodeFormat.CODE_39,
-    BarcodeFormat.CODE_93,
+    BarcodeFormat.RSS_14,
   ];
 
   hasDevices: boolean;

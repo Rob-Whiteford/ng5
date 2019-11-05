@@ -21,6 +21,9 @@ export class FormModalComponent implements OnInit {
   arrayItems: {
     title: string;
   }[];
+  
+  @Input() id: number;
+  demoForm: FormGroup;
 
   constructor(public activeModal: NgbActiveModal, private formBuilder: FormBuilder) {
 
@@ -67,12 +70,6 @@ export class FormModalComponent implements OnInit {
     this.stopScanner()
   }
 
-  @Input() id: number;
-  demoForm: FormGroup;
-
-
-
-
   closeModal() {
     this.activeModal.close('Modal Closed');
   }
@@ -103,11 +100,6 @@ export class FormModalComponent implements OnInit {
     //if (this.scannedData.findIndex(i => i.ScannedItem === dataItem.ScannedItem)==-1) {
     this.scannedData.push({ "ScannedItem": dataItem.ScannedItem });
     console.log("ScannedItem:", dataItem.ScannedItem);
-
-    //this.addItem(dataItem);
-
-    //}
-    // this.refreshGrid();
   }
 
 }

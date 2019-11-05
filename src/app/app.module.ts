@@ -27,6 +27,7 @@ import { BarecodeScannerLivestreamModule } from 'ngx-barcode-scanner';
 import { FormModalComponent } from './form-modal/form-modal.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BarcodeScannerModalComponent } from './barcode-scanner-modal/barcode-scanner-modal.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FormatsDialogComponent,
     AppInfoDialogComponent,
     DemoComponent,
-    FormModalComponent
+    FormModalComponent,
+    BarcodeScannerModalComponent
   ],
   imports: [
     BrowserModule,
@@ -65,6 +67,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   providers: [DataService],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  entryComponents: [FormatsDialogComponent, AppInfoDialogComponent, FormModalComponent],
+  entryComponents: [FormatsDialogComponent, AppInfoDialogComponent, FormModalComponent, BarcodeScannerModalComponent],
 })
 export class AppModule { }
