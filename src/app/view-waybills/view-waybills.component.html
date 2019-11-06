@@ -1,103 +1,40 @@
-<div class="container color-dark">
-    <div class="col">
-        <p>view-waybills works!!</p>
-    </div>
-</div>
-<!-- <div class="container color-light">
-        <div class="col">
-            <p>Change a reference number</p>
-            <form>
-                <input type="text" class="txt" name="item" placeholder="Reference Number..." #ReferenceNumber>
-                <input type="submit" class="btn" value="Save Reference" (click)="saveWaybill(ReferenceNumber.value)">
-            </form>
-        </div>
-    </div>
-    <br> -->
-<!-- <div class="container color-light">
-        <div class="col">
-            <p>Change a reference number</p>
-            <form>
-                <select id="Id" #Id="ngModel" class="txt" [(ngModel)]="nameId" name="Id" >  
-                    //<option selected="" value=""></option>  
-                    <option [ngValue]="waybill.WaybillNumber" *ngFor="let waybill of waybills">  
-                        {{ waybill.WaybillNumber }}  
-                    </option>  
-                </select>   -->
-<!-- <input type="text" class="txt" name="item" placeholder="Reference Number..." #ReferenceNumber> -->
-<!-- <input type="submit" class="btn" value="Save Reference" (click)="saveWaybill(ReferenceNumber.value)"> -->
-<!-- </form>
-        </div>
-    </div> -->
-<br>
-
-<div class="container color-light">
-    <div class="col">
-        <p>The grid</p>
-
-        <div style="width: 750px;height: 600px;">
-            <ag-grid-angular #agGrid style="width: 100%; height: 450px;" class="ag-theme-balham"
-                [columnDefs]="gridColumnDefs" [rowData]="gridRowData" [gridOptions]="gridOptions">
-            </ag-grid-angular>
-        </div>
-
-    </div>
-</div>
-
-<div class="container color-light">
-        <div class="col">
-            <p>The grid <input type="submit"  (click)="loopThru()"/></p>
-    
-            <div style="width: 750px;height: 600px;">
-                    <ag-grid-angular
-                    #agGrid
-                    style="width: 100%; height: 100%;"
-                    id="myGrid"
-                    class="ag-theme-balham"
-                    [pinnedTopRowData]="pinnedTopRowData"
-                    [pinnedBottomRowData]="pinnedBottomRowData"
-                    [gridOptions]="lineItemGridOptions"
-                    (gridReady)="onGridReady($event)"
-                  ></ag-grid-angular>
-            </div>
-    
-        </div>
-    </div>
-
 <div class="container color-light"
     style="display:flex; flex-direction: row; justify-content: center; align-items: center">
-    <div class="col" style="text-align: center;border-style: groove">
-        <p>Kendo grid</p>
-
-        <div style="width: 1200px;height: 600px;border-style: dotted;text-align: center">
-
+    <div class="col" style="text-align: center;  height: 650px;">
+        <div>
             <kendo-toolbar>
-                <kendo-toolbar-button [text]="'Button'"></kendo-toolbar-button>
+                    <p>View Waybills</p>
+                <!-- <kendo-toolbar-button [text]="'Button'"></kendo-toolbar-button>
                 <kendo-toolbar-button [text]="'Toggle'" [toggleable]="true"></kendo-toolbar-button>
                 <kendo-toolbar-splitbutton [text]="'Split Button'" [data]="splitButtonData">
                 </kendo-toolbar-splitbutton>
                 <kendo-toolbar-dropdownbutton [text]="'DropDownButton'" [data]="dropdownButtonData">
-                </kendo-toolbar-dropdownbutton>
+                </kendo-toolbar-dropdownbutton> -->
                 <kendo-toolbar-buttongroup [selection]="'single'">
-                    <kendo-toolbar-button [toggleable]="true" [icon]="'align-left'"></kendo-toolbar-button>
-                    <kendo-toolbar-button [toggleable]="true" [icon]="'align-center'"></kendo-toolbar-button>
-                    <kendo-toolbar-button [toggleable]="true" [icon]="'align-right'"></kendo-toolbar-button>
-                    <kendo-toolbar-button [toggleable]="true" [icon]="'align-justify'"></kendo-toolbar-button>
+                    <kendo-toolbar-button [toggleable]="true" [icon]="'refresh'" title="Refresh the current page"
+                        [text]="'Refresh'"></kendo-toolbar-button>
+                    <kendo-toolbar-button [toggleable]="true" [icon]="'delete'" [text]="'Delete'"
+                        title="Delete the selected waybills"></kendo-toolbar-button>
+                    <kendo-toolbar-button [toggleable]="true" [icon]="'preview'" [text]="'View'"></kendo-toolbar-button>
+                    <kendo-toolbar-button [toggleable]="true" [icon]="'print'" [text]="'Print'"></kendo-toolbar-button>
                 </kendo-toolbar-buttongroup>
             </kendo-toolbar>
-
             <kendo-grid [kendoGridBinding]="gridData" [pageSize]="10" [pageable]="true" [sortable]="true"
                 [filterable]="true" [groupable]="true" [height]="550" [selectable]="true">
                 <kendo-grid-checkbox-column showSelectAll="true" [width]="25"></kendo-grid-checkbox-column>
-                <kendo-grid-column field="WaybillNumber" [width]="140"></kendo-grid-column>
-                <kendo-grid-column field="WaybillDate" [width]="120"></kendo-grid-column>
-                <kendo-grid-column field="Sender" [width]="100"></kendo-grid-column>
-                <kendo-grid-column field="Receiver" [width]="130"></kendo-grid-column>
-                <kendo-grid-column field="ServiceType" [width]="130"></kendo-grid-column>
-                <kendo-grid-column field="CustomerReference" [width]="130"></kendo-grid-column>
+                <kendo-grid-column field="WaybillNumber" title="Waybill Number" [width]="100"></kendo-grid-column>
+                <kendo-grid-column field="WaybillDate" title="Waybill Date" [width]="100"></kendo-grid-column>
+                <kendo-grid-column field="Sender" title="Sender" [width]="130"></kendo-grid-column>
+                <kendo-grid-column field="Receiver" title="Receiver" [width]="130"></kendo-grid-column>
+                <kendo-grid-column field="ServiceType" title="Service Type" [width]="100"></kendo-grid-column>
+                <kendo-grid-column field="CustomerReference" title="Customer Reference" [width]="100">
+                </kendo-grid-column>
             </kendo-grid>
 
         </div>
-
     </div>
-
+</div>
+<div>
+    <!-- Spacer -->
+    <br>
 </div>

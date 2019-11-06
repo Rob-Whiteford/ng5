@@ -1,0 +1,19 @@
+{
+  "ServiceType": [
+    {
+	"Code": "SDX",
+	"Description": "Same Day",
+	"VolumetricRatio": "5000"
+	}, 
+	{
+	"Code": "ECO",
+	"Description": "Economy",
+	"VolumetricRatio": "5000"
+	},
+	{
+	"Code": "ONX",
+	"Description": "Overnight",
+	"VolumetricRatio": "5000"
+	}	
+  ]
+}

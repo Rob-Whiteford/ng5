@@ -4,11 +4,12 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { CaptureWaybillComponent } from './capture-waybill/capture-waybill.component';
 import { ViewWaybillsComponent } from './view-waybills/view-waybills.component';
-import { ManifestsComponent } from './manifests/manifests.component';
+import { ViewManifestsComponent } from './view-manifests/view-manifests.component';
 import { HelpComponent } from './help/help.component';
 import { FetchDataComponent } from './fetchdata/fetchdata.component';
 import { ScanBarcodeComponent } from './scan-barcode/scan-barcode.component';
 import { DemoComponent } from './demo/demo.component';
+import { ViewSitesComponent } from './view-sites/view-sites.component';
 
 const routes: Routes = [
   {
@@ -24,8 +25,8 @@ const routes: Routes = [
     component: CaptureWaybillComponent
   },
   {
-    path: 'manifests',
-    component: ManifestsComponent
+    path: 'view-manifests',
+    component: ViewManifestsComponent
   },
   {
     path: 'view-waybills',
@@ -42,7 +43,11 @@ const routes: Routes = [
   {
     path: 'demo',
     component: DemoComponent
-  },    
+  },  
+  {
+    path: 'view-sites',
+    component: ViewSitesComponent
+  },      
   {
     path: 'fetchdata',
     component: FetchDataComponent

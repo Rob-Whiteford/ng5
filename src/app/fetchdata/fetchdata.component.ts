@@ -1,6 +1,6 @@
 import { Component, Inject } from '@angular/core';
 import { FetchdataService } from '../fetchdata.service';
-import { ServiceType } from '../models/servicetype';
+import { ServiceType } from '../models/servicetype.model';
  
 @Component({
   selector: 'app-fetch-data',

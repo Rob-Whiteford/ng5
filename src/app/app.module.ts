@@ -10,7 +10,7 @@ import { AboutComponent } from './about/about.component';
 import { HelpComponent } from './help/help.component';
 import { ViewWaybillsComponent } from './view-waybills/view-waybills.component';
 import { CaptureWaybillComponent } from './capture-waybill/capture-waybill.component';
-import { ManifestsComponent } from './manifests/manifests.component';
+import { ViewManifestsComponent } from './view-manifests/view-manifests.component';
 import { FetchDataComponent } from './fetchdata/fetchdata.component';
 import { AgGridModule } from 'ag-grid-angular';
 import { GridModule } from '@progress/kendo-angular-grid';
@@ -28,6 +28,7 @@ import { FormModalComponent } from './form-modal/form-modal.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BarcodeScannerModalComponent } from './barcode-scanner-modal/barcode-scanner-modal.component';
+import { ViewSitesComponent } from './view-sites/view-sites.component';
 
 @NgModule({
   declarations: [
@@ -37,14 +38,15 @@ import { BarcodeScannerModalComponent } from './barcode-scanner-modal/barcode-sc
     HelpComponent,
     ViewWaybillsComponent,
     CaptureWaybillComponent,
-    ManifestsComponent,
+    ViewManifestsComponent,
     FetchDataComponent,
     ScanBarcodeComponent,
     FormatsDialogComponent,
     AppInfoDialogComponent,
     DemoComponent,
     FormModalComponent,
-    BarcodeScannerModalComponent
+    BarcodeScannerModalComponent,
+    ViewSitesComponent
   ],
   imports: [
     BrowserModule,

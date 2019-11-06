@@ -1,0 +1,2299 @@
+{
+  "Site": [
+ {
+   "SiteCode": "45028",
+   "SiteName": "CHECKERS HYPER EMFULENI",
+   "PostalCode": "1911"
+ },
+ {
+   "SiteCode": "63098",
+   "SiteName": "SHOPRITR CHECKERS",
+   "PostalCode": "6740"
+ },
+ {
+   "SiteCode": "1179",
+   "SiteName": "SHOP-CHECKERS DAVENPORT",
+   "PostalCode": "4001"
+ },
+ {
+   "SiteCode": "1179",
+   "SiteName": "SHOP-CHECKERS DAVENPORT",
+   "PostalCode": "4000"
+ },
+ {
+   "SiteCode": "KAP AGRI",
+   "SiteName": "KAAP AGRI BEDRYF -ERMANUS",
+   "PostalCode": "7200"
+ },
+ {
+   "SiteCode": "4823",
+   "SiteName": " CHECKERS HYPER SHALL CROSS",
+   "PostalCode": "4093"
+ },
+ {
+   "SiteCode": "MARRIE",
+   "SiteName": "MARIE PATTERSON",
+   "PostalCode": "1242"
+ },
+ {
+   "SiteCode": "T/BERG",
+   "SiteName": "TAFELBERG F/STORE",
+   "PostalCode": "7646"
+ },
+ {
+   "SiteCode": "JULLIE",
+   "SiteName": "JULIE VD MEULEN",
+   "PostalCode": "157"
+ },
+ {
+   "SiteCode": "YVINNE",
+   "SiteName": "GASMAN POTCH",
+   "PostalCode": "2531"
+ },
+ {
+   "SiteCode": "DEBI",
+   "SiteName": "DEBI GEORGE",
+   "PostalCode": "4058"
+ },
+ {
+   "SiteCode": "LEZAIHN",
+   "SiteName": "FM ELETRO -ISER",
+   "PostalCode": "6570"
+ },
+ {
+   "SiteCode": "FRANSIS",
+   "SiteName": "LLOYD",
+   "PostalCode": "1200"
+ },
+ {
+   "SiteCode": "WILLIEM",
+   "SiteName": "KLOPPERS",
+   "PostalCode": "6529"
+ },
+ {
+   "SiteCode": "TAFEL",
+   "SiteName": "TAFELBERG FURN/STORE",
+   "PostalCode": "7130"
+ },
+ {
+   "SiteCode": "TAFEL BERG",
+   "SiteName": "TAFELBERG FURN",
+   "PostalCode": "7130"
+ },
+ {
+   "SiteCode": "TAFEL",
+   "SiteName": "TAFELBERG FURN STORE",
+   "PostalCode": "7945"
+ },
+ {
+   "SiteCode": "TAFEL",
+   "SiteName": "TAFELBERG FURN",
+   "PostalCode": "7646"
+ },
+ {
+   "SiteCode": "TAFEL",
+   "SiteName": "TAFELBERG FURN",
+   "PostalCode": "7560"
+ },
+ {
+   "SiteCode": "HIRSCH",
+   "SiteName": "HIRSCH LALUCIA",
+   "PostalCode": "4051"
+ },
+ {
+   "SiteCode": "T/BERG",
+   "SiteName": "T/BERG FURN",
+   "PostalCode": "8000"
+ },
+ {
+   "SiteCode": "TAFEL B",
+   "SiteName": "T/BERG FURN",
+   "PostalCode": "8001"
+ },
+ {
+   "SiteCode": "T/BERG",
+   "SiteName": "TAFEL BERG FURN ",
+   "PostalCode": "1"
+ },
+ {
+   "SiteCode": "T/BERG",
+   "SiteName": "T/BERGB FURN",
+   "PostalCode": "7560"
+ },
+ {
+   "SiteCode": "PUPK",
+   "SiteName": "PUPKEWITZ MEGABUILD",
+   "PostalCode": "1"
+ },
+ {
+   "SiteCode": "WESSELS",
+   "SiteName": "FALCON TRADING",
+   "PostalCode": "5257"
+ },
+ {
+   "SiteCode": "PnP",
+   "SiteName": "PICK N PAY",
+   "PostalCode": "1380"
+ },
+ {
+   "SiteCode": "BUILDERS",
+   "SiteName": "BUILDERS W/HOUES",
+   "PostalCode": "6330"
+ },
+ {
+   "SiteCode": "PNP",
+   "SiteName": "STELLBOSCH",
+   "PostalCode": "7600"
+ },
+ {
+   "SiteCode": "ABI",
+   "SiteName": "PHOENIX",
+   "PostalCode": "4000"
+ },
+ {
+   "SiteCode": "H/HOME",
+   "SiteName": "HOUSE AND HOME ",
+   "PostalCode": "250"
+ },
+ {
+   "SiteCode": "OK FURN",
+   "SiteName": "HOUES AND HOME",
+   "PostalCode": "6000"
+ },
+ {
+   "SiteCode": "DG",
+   "SiteName": "B GELDENHUIS",
+   "PostalCode": "7160"
+ },
+ {
+   "SiteCode": "No.",
+   "SiteName": "Name",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "10000",
+   "SiteName": "Weber-Stephen Products",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50000",
+   "SiteName": "MAKRO - GERMISTON",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50001",
+   "SiteName": "MAKRO - MILNERTON       MA02MI",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50002",
+   "SiteName": "MAKRO -  ROSSBURG       MA03RO",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50003",
+   "SiteName": "MAKRO - CROWN MINES    MA04CR",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50004",
+   "SiteName": "MAKRO - OTTERY     MA06OT",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50005",
+   "SiteName": "MAKRO- SPRINGFIELD    MA07SF",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50006",
+   "SiteName": "MAKRO PIETERMARITSBURG  MA08PM",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50007",
+   "SiteName": "MAKRO - CENTURION      MA09CE",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50008",
+   "SiteName": "MAKRO - WOODMEAD     MA10WM",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50009",
+   "SiteName": "MAKRO - KABEGA P.E.    MA14KA",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50010",
+   "SiteName": "MAKRO - STRUBENS VALLEY  MA 15",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50011",
+   "SiteName": "MAKRO  -  WONDERBOOM  MA16WB",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50012",
+   "SiteName": "MAKRO - SILVERLAKES    MA17SL",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50013",
+   "SiteName": "MAKRO- VAAL  MA18VA",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50014",
+   "SiteName": "MAKRO  CAPE GATE   MA19CG",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50015",
+   "SiteName": "MAKRO-MONTAGUE GARDEN   MA20MG",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50016",
+   "SiteName": "MAKRO - NELSPRUIT  MA21NE",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50017",
+   "SiteName": "MAKRO - POLOKWANE  MA22PO",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50018",
+   "SiteName": "MAKRO BLOEMFONTEIN     23",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50019",
+   "SiteName": "MAKRO - ALBERTON  MA24AL",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50020",
+   "SiteName": "MAKRO AMANZIMTOTI   M25",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50050",
+   "SiteName": "BUILDERS W/H-  GEZINA (B01)",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50051",
+   "SiteName": "BUILDERS W/H - FAERIE GLEN B02",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50052",
+   "SiteName": "BUILDERS W/H - CENTURION   B33",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50053",
+   "SiteName": "BUILDERS W/H - 4 WAYS    B 08",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50054",
+   "SiteName": "BUILDERS W/H - BOKSBURG   B09",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50055",
+   "SiteName": "BUILDERS W/H -STRUBENSVAL  B14",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50056",
+   "SiteName": "BUILDERS W/H - RUSTENBURG  B15",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50057",
+   "SiteName": "BUILDERS W/H - RIVONIA     B23",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50058",
+   "SiteName": "BUILDERS W/H -  EDENVALE   B20",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50059",
+   "SiteName": "BUILDERS  W/H - POLOKWANE  B17",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50060",
+   "SiteName": "BUILDERS W/H- PTA  GARDENS B11",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50061",
+   "SiteName": "BUILDERS W/H - ZAMBEZI   B21",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50062",
+   "SiteName": "BUILDERS W/H - GLENEAGLES  B25",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50063",
+   "SiteName": "BUILDERS  W/H - WALMER PE  B28",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50064",
+   "SiteName": "BUILDERS W/H- BLOEMFONTEIN B27",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50065",
+   "SiteName": "BUILDERS W/H - TABLEVIEW   B41",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50066",
+   "SiteName": "BUILDERS W/H - CAPE GATE",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50067",
+   "SiteName": "BUILDERS  W/H -CONS/BERG   B44",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50068",
+   "SiteName": "BUILDERS W/H -HELDERBERG   B43",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50069",
+   "SiteName": "BUILDERS W/H- TYGERBERG    B40",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50070",
+   "SiteName": "BUILDERS  W/H  - CITY      B45",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50071",
+   "SiteName": "BUILDERS W/H - NELSPRUIT   B30",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50072",
+   "SiteName": "BUILDERS W/HOUSE PAROW  B23",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50073",
+   "SiteName": "BUILDERS W/H- NORTHRIDING  B31",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50074",
+   "SiteName": "BUILDERS W/H KEMTONPARK B32",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50075",
+   "SiteName": "BUILDERS GONUBIE  MO26",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50076",
+   "SiteName": "BUILDERS W/HOUSE CENTURION B33",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50077",
+   "SiteName": "BUILDERS W/H -BEDWORTH     B34",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50078",
+   "SiteName": "BUILDERS W/H- RIVERHORSE   B35",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50079",
+   "SiteName": "BUILDERS W/H WOODLANDS PTA B36",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50080",
+   "SiteName": "BUILDERS W/H -EMALAHLE NI  B37",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50081",
+   "SiteName": "BUILDERS W/H - GEORGE     B38",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50082",
+   "SiteName": "BUILDERS W/H- MIDDELBURG   B39",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50083",
+   "SiteName": "BUILDERS W/H DC CALL CENTRE 46",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50084",
+   "SiteName": "BUILDERS W/H- KLERKSDORP  B47",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50085",
+   "SiteName": "BUILDERS W/H- NEW CASTLE   B48",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50086",
+   "SiteName": "BUILDERS W/HOUSE RIVONIA   B50",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50087",
+   "SiteName": "BUILDERS N 1 CITY GOODWOOD S58",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50088",
+   "SiteName": "BUILDERS W/H-CRAIGHALPARK  S59",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50089",
+   "SiteName": "BUILDERS W/H- WORECESTER  S60",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50090",
+   "SiteName": "BUILDERS W/H  - LYNWOOD    S62",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50091",
+   "SiteName": "BUILDERS W/H -FLORIDA GLEN S63",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50092",
+   "SiteName": "BUILDERS W/H - WAREHOUSE   S64",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50093",
+   "SiteName": "BUILDERS W/H - BALLITO    S65",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50094",
+   "SiteName": "BUILDERS W/H- AMANZIMTOTI  S66",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50095",
+   "SiteName": "BUILDERS W/H -  BRYANSTON  S67",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50096",
+   "SiteName": "BUILDERS- KENNELWORTH 68",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50097",
+   "SiteName": "BUILDERS W/H -WILLOWBRIDGE S69",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50098",
+   "SiteName": "BUILDERS W/H- CEDAR SQUARE S70",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50099",
+   "SiteName": "BUILDERS  W/H- UMHLANGA    S71",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50100",
+   "SiteName": "BUILDERS W/H -SOUTH COAST  S72",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50101",
+   "SiteName": "BUILDERS W/H- NORWOOD     S73",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50102",
+   "SiteName": "BUILDERS W/H- STELLENBOSCH S74",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50103",
+   "SiteName": "BUILDERS W/H- GREENSTONE   S75",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50104",
+   "SiteName": "BUILDERS W/H -WONDERPARK   S76",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50105",
+   "SiteName": "BUILDERS W/S - LAMBTON   S77",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50106",
+   "SiteName": "BUILDERS W/H -ROBINDALE    S78",
+   "PostalCode": "2194"
+ },
+ {
+   "SiteCode": "50107",
+   "SiteName": "BUILDERS W/H -JEFFREY'SBAY S79",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50108",
+   "SiteName": "BUILDERS W/H- EAST LONDON  S80",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50109",
+   "SiteName": "BUILDERS W/H-NEWTONPARK PE S81",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50110",
+   "SiteName": "BUILDERS W/H-  PINETOWN    S82",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50111",
+   "SiteName": "BUILDERS W/H- UITENHAGE    S83",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50112",
+   "SiteName": "BUILDERS W/H- QUEENSTOWN   S84",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50113",
+   "SiteName": "BUILDERS  KINGWILLIAMSTOWN  85",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50114",
+   "SiteName": "BUILDERS W/H WALMER  P.E   S86",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50115",
+   "SiteName": "BUILDERS W/H- SPRINGFIELD  S87",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50116",
+   "SiteName": "BUILDERS  GREENFIELDS E.L  S88",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50117",
+   "SiteName": "BUILDERS W/H -KNYSNA       S89",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50118",
+   "SiteName": "BUILDERS W/H - GEORGE    S91",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50119",
+   "SiteName": "BUILDERS W/H -HILLCREST    S92",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50120",
+   "SiteName": "BUILDERS PIETERMARITZBURG  S93",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50121",
+   "SiteName": "BUILDERS W/H - WALKER DR   S94",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50122",
+   "SiteName": "BUILDERS-W/H  DC  PTA WEST B98",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50123",
+   "SiteName": "BUILDERS  WAREHOUSE D100    DC",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50124",
+   "SiteName": "BUILDERS  W/H -GABARONE  B1001",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50125",
+   "SiteName": "BUILDERS WAREHOUSE TETE   1004",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50126",
+   "SiteName": "BUILDERS W/H  PARK RYNIE  S110",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50127",
+   "SiteName": "BUILDERS W/H - MARGATE  S111",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50128",
+   "SiteName": "BUILDERS W/H -UMGENI ROAD S112",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50129",
+   "SiteName": "BUILDERS W/H- SOUTHGATE  S114",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50130",
+   "SiteName": "BUILDERS SUNWARD PARK  S115",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50131",
+   "SiteName": "BULDERS  S/STORE TEMBISA  R007",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50132",
+   "SiteName": "BUILDERS W/H HERMANUS  BTD022",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50133",
+   "SiteName": "RDC CENTRE GAUTENG   D102",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50134",
+   "SiteName": "BUILDERS POTCHEFSTROOM S61",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50135",
+   "SiteName": "BUILDERS W/H QUEENSTOWN S113",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50136",
+   "SiteName": "BUILDERS BEX RASLOUW",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50137",
+   "SiteName": "BUILDERS W/H - CAPE GATE NEW",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50138",
+   "SiteName": "BUILDERS BEX RICHARDSBAY",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50139",
+   "SiteName": "BUILDERS BEX HERMANUS",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50140",
+   "SiteName": "BUILDERS BEX GONUBIE",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50141",
+   "SiteName": "BUILDERS BEX PINETOWN",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50142",
+   "SiteName": "BUILDERS SECUNDA",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50200",
+   "SiteName": "GAME-GABARONE   MS0009",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50201",
+   "SiteName": "GAME-MAURITIUS      MS0016",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50202",
+   "SiteName": "GAME- LUSAKA      MS0032",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50203",
+   "SiteName": "GAME-FRANCISTOWM  MS0038",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50204",
+   "SiteName": "GAME- MAPUTU       MS0062",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50205",
+   "SiteName": "GAME- BORDER W/H       MS0069",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50206",
+   "SiteName": "GAME-BLANTYRE  W/H     MS0090",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50207",
+   "SiteName": "GAME- ILONGWE  RDC     MS0130",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50208",
+   "SiteName": "KZN  RDC  RIVERHORSE       140",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50209",
+   "SiteName": "GAME- RDC  CAPE TOWN    MS0146",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50210",
+   "SiteName": "GAME- RDC GAUTENG     MS0148",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50211",
+   "SiteName": "GAME-  LAGOS  BOADER W/H   244",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50212",
+   "SiteName": "GAME - ENUGU BORDER W/H MSO351",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50213",
+   "SiteName": "GAME MASERU   MS0595",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50214",
+   "SiteName": "GAME-GABARONE W/HOUSE  MS0621",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50215",
+   "SiteName": "GAME- UGANDA MS0823",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50216",
+   "SiteName": "GAME- WINDHOEK W.H.    MS0948",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50217",
+   "SiteName": "GAME - DION WIRED WOODMED 180",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50218",
+   "SiteName": "GAME - DION WIRED GATEWAY 161",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50350",
+   "SiteName": "JD CONSUMER ELECTRONICS AND APP PTY LTD",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50351",
+   "SiteName": "JD CONSUMER ELECTRONICS AND APP PTY LTD",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50352",
+   "SiteName": "JD CONSUMER ELECTRONICS AND APP PTY LTD",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50353",
+   "SiteName": "JD CONSUMER ELECTRONICS AND APP PTY LTD",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50354",
+   "SiteName": "JD CONSUMER ELECTRONICS AND APP PTY LTD",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50355",
+   "SiteName": "JD CONSUMER ELECTRONICS AND APP PTY LTD",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50356",
+   "SiteName": "JD CONSUMER ELECTRONICS AND APP PTY LTD",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50357",
+   "SiteName": "JD CONSUMER ELECTRONICS AND APP PTY LTD",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50358",
+   "SiteName": "JD CONSUMER ELECTRONICS AND APP PTY LTD",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50359",
+   "SiteName": "JD CONSUMER ELECTRONICS AND APP PTY LTD",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50360",
+   "SiteName": "JD CONSUMER ELECTRONICS AND APP PTY LTD",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50361",
+   "SiteName": "JD CONSUMER ELECTRONICS AND APP PTY LTD",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50362",
+   "SiteName": "JD CONSUMER ELECTRONICS AND APP PTY LTD",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50363",
+   "SiteName": "JD CONSUMER ELECTRONICS AND APP PTY LTD",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50364",
+   "SiteName": "JD CONSUMER ELECTRONICS AND APP PTY LTD",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50365",
+   "SiteName": "JD CONSUMER ELECTRONICS AND APP PTY LTD",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50366",
+   "SiteName": "JD CONSUMER ELECTRONICS AND APP PTY LTD",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50367",
+   "SiteName": "JD CONSUMER ELECTRONICS AND APP PTY LTD",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50368",
+   "SiteName": "JD CONSUMER ELECTRONICS AND APP PTY LTD",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50369",
+   "SiteName": "JD CONSUMER ELECTRONICS AND APP PTY LTD",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50370",
+   "SiteName": "JD CONSUMER ELECTRONICS AND APP PTY LTD",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50371",
+   "SiteName": "JD CONSUMER ELECTRONICS AND APP PTY LTD",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50372",
+   "SiteName": "JD CONSUMER ELECTRONICS AND APP PTY LTD",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50373",
+   "SiteName": "JD CONSUMER ELECTRONICS AND APP PTY LTD",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50374",
+   "SiteName": "JD CONSUMER ELECTRONICS AND APP PTY LTD",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50375",
+   "SiteName": "JD CONSUMER ELECTRONICS AND APP PTY LTD",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50376",
+   "SiteName": "JD CONSUMER ELECTRONICS AND APP PTY LTD",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50377",
+   "SiteName": "JD CONSUMER ELECTRONICS AND APP PTY LTD",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50378",
+   "SiteName": "JD CONSUMER ELECTRONICS AND APP PTY LTD",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50379",
+   "SiteName": "JD CONSUMER ELECTRONICS AND APP PTY LTD",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50380",
+   "SiteName": "JD CONSUMER ELECTRONICS AND APP PTY LTD",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50381",
+   "SiteName": "JD CONSUMER ELECTRONICS AND APP PTY LTD",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50382",
+   "SiteName": "JD CONSUMER ELECTRONICS AND APP PTY LTD",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50383",
+   "SiteName": "JD CONSUMER ELECTRONICS AND APP PTY LTD",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50384",
+   "SiteName": "JD CONSUMER ELECTRONICS AND APP PTY LTD",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50385",
+   "SiteName": "JD CONSUMER ELECTRONICS AND APP PTY LTD",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50386",
+   "SiteName": "JD CONSUMER ELECTRONICS AND APP PTY LTD",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50387",
+   "SiteName": "JD CONSUMER ELECTRONICS AND APP PTY LTD",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50388",
+   "SiteName": "JD CONSUMER ELECTRONICS AND APP PTY LTD",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50389",
+   "SiteName": "JD CONSUMER ELECTRONICS AND APP PTY LTD",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50500",
+   "SiteName": "C.A.W. - FURNISHERS - ISER",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50501",
+   "SiteName": "FM ELETRO - ISER",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50502",
+   "SiteName": "ISER PTY LTD - LUCKYS MANABA B",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50503",
+   "SiteName": "ISER PTY LTD - A.J.R. HYPER",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50504",
+   "SiteName": "ISER PTY LTD - DIGITAL PLANET",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50505",
+   "SiteName": "ISER PTY LTD - FREDA'S DISCOUN",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50506",
+   "SiteName": "ISER PTY LTD - FOTOCATS - SAND",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50507",
+   "SiteName": "ISER PTY LTD - FOTOCATS - BRUM",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50508",
+   "SiteName": "ISER PTY LTD - TIEKAMS  AUDIO",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50509",
+   "SiteName": "ISER PTY LTD - ARTIC ELECTRIC",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50510",
+   "SiteName": "ISER PTY LTD - MUNROS",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50511",
+   "SiteName": "ISER PTY LTD - SOLOMONS GIFTS",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50512",
+   "SiteName": "ISER PTY LTD - GANIS KINROSS",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50513",
+   "SiteName": "ISER PTY LTD - SOUND DESIGNZ",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50514",
+   "SiteName": "ISER PTY LTD - GANIS VRYBURG",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50515",
+   "SiteName": "ISER PTY LTD - HIGHVELD DISCOU",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50516",
+   "SiteName": "ISER PTY LTD - VOORTREKKER SUP",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50517",
+   "SiteName": "ISER PTY LTD - MASONS BENONI",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50518",
+   "SiteName": "ISER PTY LTD - BAM'S FURNISHER",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50519",
+   "SiteName": "ISER PTY LTD - NATAL VIDEO",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50520",
+   "SiteName": "ISER PTY LTD - DUP'S FRANKFORT",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50521",
+   "SiteName": "ISER PTY LTD - DUPS BETHLEHEM",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50522",
+   "SiteName": "ISER PTY LTD - ELCO TRADING PT",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50523",
+   "SiteName": "ISER PTY LTD - FOTOCATS EAST R",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50524",
+   "SiteName": "ISER PTY LTD - NEL & UNWIN",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50525",
+   "SiteName": "ISER PTY LTD - OSMAN RAYDON",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50526",
+   "SiteName": "ISER PTY LTD - KARA BAZAARS",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50527",
+   "SiteName": "ISER PTY LTD - AFRICOOL",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50528",
+   "SiteName": "ISER PTY LTD - DUPS GESKENKE R",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50529",
+   "SiteName": "WALK & TALK CELL & APPLIANCES",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50530",
+   "SiteName": "ISER PTY LTD - DREIERS IFAFI CC",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50531",
+   "SiteName": "ISER PTY LTD - AMPER ALLES STO",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50532",
+   "SiteName": "ISER PTY LTD - LATIF FURNISHER",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50533",
+   "SiteName": "ISER PTY LTD - MULTIRAMA @ HOM",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50534",
+   "SiteName": "ISER PTY LTD - RAND SUPERSTORE",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50535",
+   "SiteName": "ISER PTY LTD - A & E HYPERWORL",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50536",
+   "SiteName": "ISER PTY LTD - CLR ELECTRICAL",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50537",
+   "SiteName": "MASONS BETHLEHEM-ISER",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50538",
+   "SiteName": "PARSONS HOME APPLIANCES",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50539",
+   "SiteName": "BLOMEYERS - ISER",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50540",
+   "SiteName": "ISER PTY LTD - LA ROCHELLE FUR",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50541",
+   "SiteName": "ISER PTY LTD - CATS DIGITAL -",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50542",
+   "SiteName": "ISER PTY LTD - AMBASSADOR TECH",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50543",
+   "SiteName": "ISER PTY LTD - AUSTRIA ELECTRI",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50544",
+   "SiteName": "ISER PTY LTD - RAILWAY FURNITU",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50545",
+   "SiteName": "ISER PTY LTD - KAYSIES SUPPLY",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50546",
+   "SiteName": "ISER PTY LTD - ALISOM COMMUNIC",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50547",
+   "SiteName": "ISER PTY LTD - KAY MAKAN DURBA",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50548",
+   "SiteName": "ISER PTY LTD - P A STATIONERS",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50549",
+   "SiteName": "DIGITAL PLANET PRIMROSE TRANSP",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50550",
+   "SiteName": "SAC HAR MOBILE",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50551",
+   "SiteName": "COPFIN",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50552",
+   "SiteName": "ELAND FURNISHERS",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50553",
+   "SiteName": "ASCOT DISTRIBUTION CC",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50554",
+   "SiteName": "HOUSE OF CLASS",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50555",
+   "SiteName": "KLOPPERS / ISER PTY LTD",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50556",
+   "SiteName": "PNS AIRCONDITIONING T/A INHOUSE",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50557",
+   "SiteName": "GEM FURNISHERS",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50600",
+   "SiteName": "GROUP APPLIANCES - EIKESTAD F.",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50601",
+   "SiteName": "P & G CAPE INS. REPLACEMENT",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50602",
+   "SiteName": "BAYVIEW DISC. FUR. GANSBAAI",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50603",
+   "SiteName": "FURNMARK",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50604",
+   "SiteName": "GROUP APPLIANCES - BURGER MEUB",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50605",
+   "SiteName": "GROUP APPLIANCE - CALDIS SOUND",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50606",
+   "SiteName": "GROUP APPLIANCE - A & A FURNIS",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50607",
+   "SiteName": "GROUP APPLIANCE HNT FURN.",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50608",
+   "SiteName": "GROUP APPLIANCE - WAKEFORDS F",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50609",
+   "SiteName": "GROUP APPLIANCES-STER DIGITAL",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50610",
+   "SiteName": "BERGZICHT FURNISHERS",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50611",
+   "SiteName": "CATERWARE CONNECTIONS CC",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50612",
+   "SiteName": "GROUP APPLIANCES - MODERN ELEC",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50613",
+   "SiteName": "GROUP APPLIANCES - RAMA'S (E/L",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50614",
+   "SiteName": "GROUP APPLIANCES - PHOTO STAA",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50615",
+   "SiteName": "GROUP APPLIANCE - STASIE MEUBE",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50616",
+   "SiteName": "GROUP APPLIANCES - THE GIFT CO",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50617",
+   "SiteName": "GROUP APPLIANCES - LIDO FURNIS",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50618",
+   "SiteName": "GROUP APPLIANCES - METELERKAMP",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50619",
+   "SiteName": "GROUP APPLIANCES - BAYSIDE DIS",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50620",
+   "SiteName": "ORCHARD AGRIMARK",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50621",
+   "SiteName": "GROUP APPLIANCES - IMAGE AUDIO",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50622",
+   "SiteName": "GROUP APPLIANCES - BETHLEHEM M",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50623",
+   "SiteName": "GROUP APPLIANCES - SAVE HARDWARE",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50624",
+   "SiteName": "GROUP APPLIANCES - BALLTRON PT",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50625",
+   "SiteName": "GROUP APPLIANCES - DUPS BETHLE",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50626",
+   "SiteName": "GROUP APPLIANCES - TOP MEUBELS",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50627",
+   "SiteName": "GROUP APPLIANCES - BERG MEUBEL",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50628",
+   "SiteName": "GROUP APPLIANCES - HI-FI & CAM",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50629",
+   "SiteName": "GROUP APPLIANCES - SENTRAAL SU",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50630",
+   "SiteName": "HAAS DAS SATELITE & AUDIO",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50631",
+   "SiteName": "BERG MEUBELS BURGERSDORP",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50632",
+   "SiteName": "DUP MEUBELS PIKETBERG",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50633",
+   "SiteName": "THIRD GENERATION",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50650",
+   "SiteName": "HIRSCH'S APPLIANCES SPECIALIST",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50651",
+   "SiteName": "HIRSCH'S HOMESTORE",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50652",
+   "SiteName": "HIRSCH'S WAREHOUSE",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50653",
+   "SiteName": "HIRSCH'S HILLCREST BR17",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50654",
+   "SiteName": "HIRSCH'S HILLCREST BR18",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50655",
+   "SiteName": "HIRSCH'S  DURBAN EXHIB. CEN.",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50656",
+   "SiteName": "HIRSCH'S APPLIANCES CENTURION",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50657",
+   "SiteName": "HIRSCH'S APPLIANCES CENTURION",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50658",
+   "SiteName": "HIRSCH'S HOMESTORE P.M.B.G.",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50659",
+   "SiteName": "HIRSCH'S WAREHOUSE P.M.B.G.",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50660",
+   "SiteName": "HIRSCH'S APPLIANCES STRUBENS V",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50661",
+   "SiteName": "HIRSCH'S APPLIANCES STRUBEN'S",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50662",
+   "SiteName": "HIRSCH'S WAREHOUSE BRIARDENE S",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50663",
+   "SiteName": "HIRSCH'S HOMESTORE LA LUCIA RI",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50664",
+   "SiteName": "HIRSCH'S  SERVICE DEPT. BR81",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50665",
+   "SiteName": "HIRSCH'S HOMESTORE LA LUCIA RI",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50666",
+   "SiteName": "HIRSCH'S HOMESTORE FOURWAYS ST",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50667",
+   "SiteName": "HIRSCH'S HOMESTORE WAREHOUSE F",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50668",
+   "SiteName": "HIRSCH'S HOMESTORE BALLITO STO",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50669",
+   "SiteName": "HIRSCH'S WAREHOUSE BALLITO BAY",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50670",
+   "SiteName": "HIRSCHS  H/S  MEADOWDALE BR110",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50671",
+   "SiteName": "HIRSCHS W/H MEADOWDALE BR112",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50672",
+   "SiteName": "HIRSCH'S HOMESTORE MILNERTON",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50673",
+   "SiteName": "HIRSCH'S WAREHOUSE MILNERTON",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50674",
+   "SiteName": "HIRSCH'S APPLIANCES BOKSBURG",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50675",
+   "SiteName": "HIRSCH'S APPLIANCES BOKSBURG",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50676",
+   "SiteName": "HIRSCH'S SILVERLAKES",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50677",
+   "SiteName": "HIRSCH'S SILVERLAKES",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50678",
+   "SiteName": "HIRSCH'S UMGENI",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50700",
+   "SiteName": "MERCURY BUILD IT",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50701",
+   "SiteName": "LADYBRAND BUILD IT      21526",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50702",
+   "SiteName": "BUILD IT KWAZULU-NATAL",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50703",
+   "SiteName": "BOTHA'S HILL BUILD IT 10896",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50704",
+   "SiteName": "SEABREEZE   BUILD IT   11199",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50705",
+   "SiteName": "PINETOWN BUILD IT     11261",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50706",
+   "SiteName": "TRI-HARDWARE BUILD IT    11102",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50707",
+   "SiteName": "AMANDLA BUILD IT      11075",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50708",
+   "SiteName": "SIYAKHA BUILD IT   11407",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50750",
+   "SiteName": "KURUMAN SPAR    (21530)",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50751",
+   "SiteName": "SUNNINGHILL  SUPERSPAR   21698",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50752",
+   "SiteName": "KATHU SUPERSPAR (FS)  (21580)",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50780",
+   "SiteName": "SPAR WESTERN CAPE - BUIL IT",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50781",
+   "SiteName": "CAPE QUATER SPAR   35646",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50782",
+   "SiteName": "BUILD IT FRANSCHHOEK  35406",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50783",
+   "SiteName": "UPINGTON SUPERSPAR       35267",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50784",
+   "SiteName": "SPAR SEA POINT",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "50785",
+   "SiteName": "OLIVEDALE SUPERSPAR",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60000",
+   "SiteName": "CHECKERS - HYPER GATEWAY",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60001",
+   "SiteName": "CHECKERS HYPER NEW CASTLE",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60002",
+   "SiteName": "HYPER RUSTENBURG",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60003",
+   "SiteName": "HYPERAMA PAROW",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60004",
+   "SiteName": "HYPERAMA N1 CITY",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60005",
+   "SiteName": "HYPERAMA TOKAI",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60006",
+   "SiteName": "HYPERAMA PROSPECTON",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60007",
+   "SiteName": "CHECKERS -HYPER WESTVILLE",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60008",
+   "SiteName": "HYPERAMA BLOEMFONTEIN",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60009",
+   "SiteName": "CHECK-HYPER  MALL OF CARNIVAL",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60010",
+   "SiteName": "CHECKERS - HYPER SANDOWN",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60011",
+   "SiteName": "CHECKERS NORTHGATE",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60012",
+   "SiteName": "CHECKERS-HYPER EMFULENI",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60013",
+   "SiteName": "CHECKERS HYPER SHALLCROSS",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60014",
+   "SiteName": "HYPERAMA",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60015",
+   "SiteName": "HYPERAMA",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60016",
+   "SiteName": "CHECKERS-HYPER CENTURION LIFES",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60017",
+   "SiteName": "HYPERAMA NORTHMEAD",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60018",
+   "SiteName": "HYPERAMA MENLYN",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60019",
+   "SiteName": "HYPERAMA CENTURION",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60020",
+   "SiteName": "HYPERAMA EASTGATE",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60021",
+   "SiteName": "HYPERAMA FOURWAYS",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60022",
+   "SiteName": "HYPERAMA SANDTON",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60023",
+   "SiteName": "HYPERAMA BOKSBURG",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60024",
+   "SiteName": "HYPERAMA BENONI",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60025",
+   "SiteName": "HYPERAMA ROODEPOORT",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60026",
+   "SiteName": "HYPERAMA WESTGATE",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60027",
+   "SiteName": "HYPERAMA KEMPTON PARK",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60028",
+   "SiteName": "HYPERAMA GERMISTON",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60029",
+   "SiteName": "HYPERAMA MAYVILLE",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60030",
+   "SiteName": "SHOPRITE-CHECKERS EXPENSE CRED",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60031",
+   "SiteName": "SHOPRITE-CHECKERS EXPENSE CRED",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60032",
+   "SiteName": "SHOPRITE-CHECKERS EXPENSE CRED",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60033",
+   "SiteName": "SHOPRITE-CHECKERS EXPENSE CRED",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60034",
+   "SiteName": "SHOP - CHECKERS DURBANVILLE",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60035",
+   "SiteName": "SHOP-CHECKERS PLETTENBERG BAY",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60036",
+   "SiteName": "SHOP-CHECK OVAL (LADYSMITH)",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60037",
+   "SiteName": "SHOP-CHECK MONTANA",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60038",
+   "SiteName": "SHOP-CHECKERS MUIZENBERG",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60039",
+   "SiteName": "SHOP-CHECK CENTURY CITY",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60040",
+   "SiteName": "SHOP-CHECK MORELETA PARK",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60041",
+   "SiteName": "SHOP-CHECK PAARL",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60042",
+   "SiteName": "SHOP-CHECK WELTEVREDEN",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60043",
+   "SiteName": "SHOP-CHECK NORKEM PARK",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60044",
+   "SiteName": "SHOP-CHECK HOUTBAY",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60045",
+   "SiteName": "SHOP-CHECK KROONSTAD",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60046",
+   "SiteName": "SHOP-CHECK SUNNYPARK",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60047",
+   "SiteName": "SHOPRITE BRITS",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60048",
+   "SiteName": "SHOPRITE-CHECKERS AMANZIMTOTI",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60049",
+   "SiteName": "SHOP-CHECKERS KIMBERLEY",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60050",
+   "SiteName": "SHOP-CHECKERS WELKOM",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60051",
+   "SiteName": "SHOPRITE-CHECKERS MOKOPANE",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60052",
+   "SiteName": "SHOP-CHECK MEADOWRIDGE",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60053",
+   "SiteName": "SHOP-CHECKERS DAVENPORT",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60054",
+   "SiteName": "SHOP-CHECKERS BLUFF",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60055",
+   "SiteName": "SHOP-CHECKERS METLIFE PLAZA",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60056",
+   "SiteName": "SHOP-CHECKERS KLOOF STREET",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60057",
+   "SiteName": "SHOP-CHECKERS NAHOON",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60058",
+   "SiteName": "SHOP-CHECK PLUMSTEAD",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60059",
+   "SiteName": "SHOP-CHECKERS WORCESTER",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60060",
+   "SiteName": "SHOP-CHECKERS SOMERSET WEST",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60061",
+   "SiteName": "SHOP-CHECKERS SCOTTSVILLE",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60062",
+   "SiteName": "SHOPRITE-CHECKERS EMPANGENI",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60063",
+   "SiteName": "SHOP-CHECKERS QUEENSTOWN",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60064",
+   "SiteName": "SHOP-CHECKERS SASOLBURG",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60065",
+   "SiteName": "SHOPRITE-CHECKERS MAKHADO",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60066",
+   "SiteName": "SHOP-CHECKERS MONUMENT PARK",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60067",
+   "SiteName": "SHOP-CHECK KLIPFONTEIN",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60068",
+   "SiteName": "SHOP-CHECK OAKDALE",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60069",
+   "SiteName": "SHOP-CHECK LYNNWOOD",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60070",
+   "SiteName": "SHOP-CHECKERS SIXTH AVENUE",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60071",
+   "SiteName": "SHOP-CHECKERS SEA POINT",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60072",
+   "SiteName": "SHOP-CHECK BROOKLYN",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60073",
+   "SiteName": "SHOPRITE OVERPORT",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60074",
+   "SiteName": "SHOPRITE-CHECKERS WINDERMERE",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60075",
+   "SiteName": "SHOP-CHECKERS WESTDENE",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60076",
+   "SiteName": "SHOP-CHECK ARCON PARK",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60077",
+   "SiteName": "SHOP-CHECK BRYANSTON",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60078",
+   "SiteName": "SHOP-CHECK VREDENBURG",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60079",
+   "SiteName": "SHOP-CHECK ST JOHNS",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60080",
+   "SiteName": "SHOP-CHECK GREENACRES",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60081",
+   "SiteName": "SHOP-CHECK OUDTSHOORN",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60082",
+   "SiteName": "SHOP-CHECK EMMARENTIA",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60083",
+   "SiteName": "SHOP-CHECKERS WESTVILLE",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60084",
+   "SiteName": "SHOP CHECKERS - EIKESTAD MALL",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60085",
+   "SiteName": "SHOP-CHECK V.D.B.P",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60086",
+   "SiteName": "SHOP-CHECK POLOKWANE/PIETERSBU",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60087",
+   "SiteName": "SHOP-CHECKERS RONDEBOSCH",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60088",
+   "SiteName": "SHOP-CHECK KLERKSDORP",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60089",
+   "SiteName": "SHOP-CHECKERS VIRGINIA",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60090",
+   "SiteName": "SHOPRITE-CHECKERS NELSPRUIT",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60091",
+   "SiteName": "SHOPRITE PARK",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60092",
+   "SiteName": "SHOPRITE AMALINDA",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60093",
+   "SiteName": "SHOP-CHECKERS BRACKENHURST",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60094",
+   "SiteName": "SHOP-CHECKERS KING WILLIAM'S T",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60095",
+   "SiteName": "SHOP-CHECK GLENVISTA",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60096",
+   "SiteName": "SHOP-CHECKERS UMGENI ROAD",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60097",
+   "SiteName": "SHOP-CHECK BALFOUR PARK",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60098",
+   "SiteName": "SHOP-CHECK WESTGATE",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60099",
+   "SiteName": "SHOP-CHECK TABLEVIEW",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60100",
+   "SiteName": "SHOP-CHECKERS CASCADES",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60101",
+   "SiteName": "SHOP-CHECKERS SPRINGS",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60102",
+   "SiteName": "SHOP-CHECK BRACKENFELL",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60103",
+   "SiteName": "SHOP-CHECK JAN SMUTS",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60104",
+   "SiteName": "SHOP-CHECK KIMBERLEY NEW GAME",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60105",
+   "SiteName": "SHORPRITE-CHECKERS VINCENT",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60106",
+   "SiteName": "SHOPRITE-CHECKERS - BEN FLEUR",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60107",
+   "SiteName": "SHOPRITE-CHECKERS MIDDELBURG M",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60108",
+   "SiteName": "SHOPRITE-CHECKERS PARKVIEW",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60109",
+   "SiteName": "SHOPRITE-CHECKERS SILVERLAKES",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60110",
+   "SiteName": "SHOPRITE-CHECKERS NICOLWAY",
+   "PostalCode": null
+ },
+ {
+   "SiteCode": "60111",
+   "SiteName": "SHOPRITE-CHECKERS CASTLE ROCK",
+   "PostalCode": null
+ }
+  ]
+}

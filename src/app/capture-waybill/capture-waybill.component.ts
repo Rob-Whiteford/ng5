@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ServiceTypeService } from '../services/service-type.service';
-import { ServiceType } from '../models/servicetype';
+import { ServiceType } from '../models/servicetype.model';
 import { SiteListService } from '../services/site-list.service';
 import { LineItem } from '../models/lineitem.model';
 import { Observable, of, from } from 'rxjs';

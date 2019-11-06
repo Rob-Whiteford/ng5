@@ -13,7 +13,7 @@ import { Site } from '../models/site.model';
 
 export class SiteListService {
 
-  private baseUrl = 'https://api.myjson.com/bins/ipkv0';
+  private baseUrl = 'https://api.myjson.com/bins/17cszg';
 
   constructor(private _http: HttpClient) { }
 

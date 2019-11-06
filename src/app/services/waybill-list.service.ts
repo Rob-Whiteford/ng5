@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {HttpClient, HttpParams} from '@angular/common/http';
 import {Observable, BehaviorSubject} from 'rxjs';
-import {Waybill} from '../models/waybill';
+import {Waybill} from '../models/waybill.model';
 
 
 @Injectable({
