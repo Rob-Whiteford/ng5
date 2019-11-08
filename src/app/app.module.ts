@@ -29,6 +29,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BarcodeScannerModalComponent } from './barcode-scanner-modal/barcode-scanner-modal.component';
 import { ViewSitesComponent } from './view-sites/view-sites.component';
+import { EditSiteComponent } from './edit-site/edit-site.component';
+import { DialogsModule } from '@progress/kendo-angular-dialog';
+
+
 
 @NgModule({
   declarations: [
@@ -46,7 +50,8 @@ import { ViewSitesComponent } from './view-sites/view-sites.component';
     DemoComponent,
     FormModalComponent,
     BarcodeScannerModalComponent,
-    ViewSitesComponent
+    ViewSitesComponent,
+    EditSiteComponent
   ],
   imports: [
     BrowserModule,
@@ -64,7 +69,8 @@ import { ViewSitesComponent } from './view-sites/view-sites.component';
     MatDialogModule,
     BarecodeScannerLivestreamModule,
     NgbModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    DialogsModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent],

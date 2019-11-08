@@ -1,0 +1,96 @@
+<kendo-dialog *ngIf="active" [width]="700" [height]="450" (close)="closeForm()">
+    <kendo-dialog-titlebar>
+        {{ isNew ? 'Add new site' : 'Edit site' }}
+    </kendo-dialog-titlebar>
+
+    <form novalidate [formGroup]="editForm">
+
+        <div class="site_grid_data_7row3col">
+
+            <div>
+                <label for="SiteCode" class="control-label">Site Code:&nbsp;</label>
+            </div>
+            <div>
+                <input type="text" class="k-textbox" formControlName="SiteCode" />
+            </div>
+            <div class="k-tooltip k-tooltip-validation"
+                [style.visibility]="editForm.controls.SiteCode.valid || editForm.controls.SiteCode.pristine ? 'hidden':'visible'">
+                required
+            </div>
+
+            <div>
+                <label for="SiteName" class="control-label">Site Name:&nbsp;</label>
+            </div>
+            <div>
+                <input type="text" class="k-textbox" style="width: 250px;" formControlName="SiteName" />
+            </div>
+            <div class="k-tooltip k-tooltip-validation"
+                [style.visibility]="editForm.controls.SiteName.valid || editForm.controls.SiteName.pristine ? 'hidden':'visible'">
+                required
+            </div>
+
+            <div>
+                <label for="Address1" class="control-label">Address Line 1:&nbsp;</label>
+            </div>
+            <div>
+                <input type="text" class="k-textbox" style="width: 250px;" formControlName="Address1" />
+            </div>
+            <div class="k-tooltip k-tooltip-validation"
+                [style.visibility]="editForm.controls.Address1.valid || editForm.controls.Address1.pristine ? 'hidden':'visible'">
+                required
+            </div>
+
+            <div>
+                <label for="Address1" class="control-label">Address Line 2:&nbsp;</label>
+            </div>
+            <div>
+                <input type="text" class="k-textbox" formControlName="Address2" />
+            </div>
+            <div class="k-tooltip k-tooltip-validation"
+                [style.visibility]="editForm.controls.Address2.valid || editForm.controls.Address2.pristine ? 'hidden':'visible'">
+                required
+            </div>
+
+            <div>
+                <label for="PostalCode" class="control-label">Postal Code:&nbsp;</label>
+            </div>
+            <div>
+                <input type="text" class="k-textbox" formControlName="PostalCode" />
+            </div>
+            <div class="k-tooltip k-tooltip-validation"
+                [style.visibility]="editForm.controls.PostalCode.valid || editForm.controls.PostalCode.pristine ? 'hidden':'visible'">
+                required
+            </div>
+
+
+            <div>
+                <label for="ContactName" class="control-label">Contact Name:&nbsp;</label>
+            </div>
+            <div>
+                <input type="text" class="k-textbox" formControlName="ContactName" />
+            </div>
+            <div class="k-tooltip k-tooltip-validation"
+                [style.visibility]="editForm.controls.ContactName.valid || editForm.controls.ContactName.pristine ? 'hidden':'visible'">
+                required
+            </div>
+
+            <div>
+                <label for="ContactNumber" class="control-label">Contact No.:&nbsp;</label>
+            </div>
+            <div>
+                <input type="text" class="k-textbox" formControlName="ContactNumber" />
+            </div>
+            <div class="k-tooltip k-tooltip-validation"
+                [style.visibility]="editForm.controls.ContactNumber.valid || editForm.controls.ContactNumber.pristine ? 'hidden':'visible'">
+                required
+            </div>
+
+        </div>
+
+    </form>
+
+    <kendo-dialog-actions>
+        <button class="k-button" (click)="onCancel($event)">Cancel</button>
+        <button class="k-button k-primary" [disabled]="!editForm.valid" (click)="onSave($event)">Save</button>
+    </kendo-dialog-actions>
+</kendo-dialog>

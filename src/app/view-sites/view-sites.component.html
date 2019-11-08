@@ -7,20 +7,39 @@
 
             <kendo-toolbar>
                 <kendo-toolbar-buttongroup [selection]="'single'">
-                    <kendo-toolbar-button [toggleable]="true" [icon]="'add'" [text]="'Create'" title="Create New Site"></kendo-toolbar-button>
-                    <kendo-toolbar-button [toggleable]="true" [icon]="'edit'" [text]="'Edit'" title="Edit Existing Site"></kendo-toolbar-button>
-                    <kendo-toolbar-button [toggleable]="true" [icon]="'delete'" [text]="'Delete'" title="Delete Site"></kendo-toolbar-button>
-                    <kendo-toolbar-button [toggleable]="true" (click)="exportToExcel(grid)" [icon]="'excel'" [text]="'Export'" title="Export to Excel"></kendo-toolbar-button>
+                    <kendo-toolbar-button [toggleable]="true" [icon]="'add'" [text]="'Create'" title="Create New Site" (click)="addHandler()">
+                    </kendo-toolbar-button>
+                    <kendo-toolbar-button [toggleable]="true" [icon]="'edit'" [text]="'Edit'"
+                        title="Edit Existing Site"></kendo-toolbar-button>
+                    <kendo-toolbar-button [toggleable]="true" [icon]="'delete'" [text]="'Delete'" title="Delete Site">
+                    </kendo-toolbar-button>
+                    <kendo-toolbar-button [toggleable]="true" (click)="exportToExcel(grid)" [icon]="'excel'"
+                        [text]="'Export'" title="Export to Excel"></kendo-toolbar-button>
                 </kendo-toolbar-buttongroup>
- 
+
             </kendo-toolbar>
 
-            <kendo-grid #grid="kendoGrid" [kendoGridBinding]="gridData" [pageSize]="10" [buttonCount]=5 [pageable]="true" [sortable]="true"
-                [filterable]="true" [groupable]="true" [height]="550" [selectable]="true">
+            <!-- <kendo-grid #grid="kendoGrid" [kendoGridBinding]="gridData" [pageSize]="10" [buttonCount]=5
+                [pageable]="true" [sortable]="true" [filterable]="true" [groupable]="true" [height]="550"
+                [selectable]="true"> -->
+
+                <kendo-grid #grid
+                [data]="view | async"
+                [kendoGridBinding]="gridData"
+                [height]="550"
+                [filterable]="true" [groupable]="true" [sortable]="true"
+                [pageSize]="gridState.take" [skip]="gridState.skip" [sort]="gridState.sort"
+                [pageable]="true" [sortable]="true"
+                (dataStateChange)="onStateChange($event)"
+                (edit)="editHandler($event)" (cancel)="cancelHandler($event)"
+                (save)="saveHandler($event)" (remove)="removeHandler($event)"
+                (add)="addHandler($event)"
+                [navigable]="true"
+                >
 
                 <ng-template kendoGridToolbarTemplate>
-                        <button type="button" kendoGridExcelCommand icon="excel">Export to Excel</button>
-                    </ng-template>
+                    <button kendoGridAddCommand>Add new</button>
+                </ng-template>
 
                 <kendo-grid-checkbox-column showSelectAll="true" [width]="30"></kendo-grid-checkbox-column>
                 <kendo-grid-column title="Site Code" field="SiteCode" [width]="140"></kendo-grid-column>
@@ -29,7 +48,19 @@
                 <kendo-grid-column title="City" field="Address4" [width]="130"></kendo-grid-column>
                 <kendo-grid-column title="Postal Code" field="PostalCode" [width]="130"></kendo-grid-column>
                 <kendo-grid-excel fileName="Sites.xlsx"></kendo-grid-excel>
+                <kendo-grid-command-column title="Options" width="100">
+                    <ng-template kendoGridCellTemplate>
+                        <button kendoGridEditCommand [primary]="true">Edit</button>
+                        <button kendoGridRemoveCommand>Delete</button>
+                    </ng-template>
+                </kendo-grid-command-column>                
             </kendo-grid>
+
+            <kendo-grid-edit-form [model]="editDataItem" [isNew]="isNew"
+                (save)="saveHandler($event)"
+                (cancel)="cancelHandler()">
+            </kendo-grid-edit-form>
+
         </div>
     </div>
 </div>

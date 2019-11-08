@@ -1,6 +1,6 @@
 
 
-export interface Manifest {
+export class Manifest {
     ManifestNumber:string;
     ManifestDate:string;
     Depot: string;

@@ -1,0 +1,8 @@
+  .site_grid_data_7row3col {
+    display:  inline-grid;
+    text-align: left;
+    grid-template-rows:    40px 40px 40px 40px 40px 40px 40px;
+    grid-template-columns: 100px 250px 200px;
+    grid-row-gap:    1px;
+    grid-column-gap: 5px; 
+  }
