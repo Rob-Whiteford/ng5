@@ -1,0 +1,38 @@
+<div class="container color-light"
+    style="display:flex; flex-direction: row; justify-content: center; align-items: center">
+    <div class="col" style="text-align: center;  height: 650px;">
+        <div>
+            <kendo-toolbar>
+                <p>View Waybills</p>
+                <kendo-toolbar-buttongroup [selection]="'single'">
+                    <kendo-toolbar-button [toggleable]="true" [icon]="'refresh'" title="Refresh the current page"
+                        [text]="'Refresher'"></kendo-toolbar-button>
+                    <kendo-toolbar-button [toggleable]="true" [icon]="'new'" [text]="'Create'" (click)="addHandler()"
+                        title="Delete the selected waybills"></kendo-toolbar-button>
+                    <kendo-toolbar-button [toggleable]="true" [icon]="'scan'" [text]="'Scan'" title="Scan"  (click)="addHandler()">
+                    </kendo-toolbar-button>
+                </kendo-toolbar-buttongroup>
+            </kendo-toolbar>
+            <kendo-grid [kendoGridBinding]="gridData" [pageSize]="10" [pageable]="true" [sortable]="true"
+                [filterable]="true" [groupable]="true" [height]="550" [selectable]="true">
+                <kendo-grid-checkbox-column showSelectAll="true" [width]="25"></kendo-grid-checkbox-column>
+                <kendo-grid-column field="WaybillNumber" title="Waybill Number" [width]="100"></kendo-grid-column>
+                <kendo-grid-column field="WaybillDate" title="Waybill Date" [width]="100"></kendo-grid-column>
+                <kendo-grid-column field="Sender" title="Sender" [width]="130"></kendo-grid-column>
+                <kendo-grid-column field="Receiver" title="Receiver" [width]="130"></kendo-grid-column>
+                <kendo-grid-column field="ServiceType" title="Service Type" [width]="100"></kendo-grid-column>
+                <kendo-grid-column field="CustomerReference" title="Customer Reference" [width]="100">
+                </kendo-grid-column>
+            </kendo-grid>
+
+            <kendo-grid-scan-to-manifest-form [model]="newScanData" [isNew]="isNew" (save)="saveHandler($event)"
+                (cancel)="cancelHandler()">
+            </kendo-grid-scan-to-manifest-form>
+
+        </div>
+    </div>
+</div>
+<div>
+    <!-- Spacer -->
+    <br>
+</div>

@@ -31,7 +31,8 @@ import { BarcodeScannerModalComponent } from './barcode-scanner-modal/barcode-sc
 import { ViewSitesComponent } from './view-sites/view-sites.component';
 import { EditSiteComponent } from './edit-site/edit-site.component';
 import { DialogsModule } from '@progress/kendo-angular-dialog';
-
+import { CreateManifestComponent } from './create-manifest/create-manifest.component';
+import { ScanToManifestComponent } from './scan-to-manifest/scan-to-manifest.component';
 
 
 @NgModule({
@@ -51,7 +52,9 @@ import { DialogsModule } from '@progress/kendo-angular-dialog';
     FormModalComponent,
     BarcodeScannerModalComponent,
     ViewSitesComponent,
-    EditSiteComponent
+    EditSiteComponent,
+    CreateManifestComponent,
+    ScanToManifestComponent
   ],
   imports: [
     BrowserModule,

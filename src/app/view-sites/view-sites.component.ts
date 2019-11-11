@@ -54,7 +54,7 @@ export class ViewSitesComponent {
   getManifests(): void {
     this._callService.getSites().subscribe(data => {
       if (data) {
-        this.sites = data.Site;
+        //this.sites = data.Site;
         this.isLoaded = true;
         this.gridData = this.sites;
       }

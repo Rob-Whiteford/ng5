@@ -38,6 +38,7 @@
     "@progress/kendo-angular-toolbar": "^2.2.0",
     "@progress/kendo-data-query": "^1.0.0",
     "@progress/kendo-drawing": "^1.0.0",
+    "@progress/kendo-theme-bootstrap": "^4.4.0",
     "@progress/kendo-theme-default": "latest",
     "@zxing/ngx-scanner": "^2.0.1",
     "ag-grid-angular": "^21.2.2",

@@ -24,7 +24,6 @@ export class EditSiteComponent {
 
   @Input() public set model(site: Site) {
       this.editForm.reset(site);
-
       this.active = site !== undefined;
   }
 

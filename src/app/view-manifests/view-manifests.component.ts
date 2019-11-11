@@ -7,6 +7,7 @@ import { Observable } from 'rxjs';
 import { GridModule } from '@progress/kendo-angular-grid';
 import { GridDataResult, DataStateChangeEvent, PageChangeEvent } from '@progress/kendo-angular-grid';
 import { State } from '@progress/kendo-data-query';
+import { ScanToManifestComponent } from '../scan-to-manifest/scan-to-manifest.component';
 
 @Component({
   selector: 'app-manifests',
@@ -16,6 +17,7 @@ import { State } from '@progress/kendo-data-query';
 
 @NgModule({
   declarations: [
+    ScanToManifestComponent,
   ],
   imports: [GridModule
   ],
@@ -44,7 +46,7 @@ export class ViewManifestsComponent  {
   getManifests(): void {
     this._callService.getManifestList().subscribe(data => {
       if (data) {
-      this.manifests  = data.Manifest;
+        //this.manifests  = data.Manifest;
         this.isLoaded = true;
         this.gridRowData = this.manifests;
         this.gridData = this.manifests;
