@@ -5,7 +5,27 @@
 
         <div style="height: 600px;text-align: center">
 
-            <kendo-toolbar>
+
+            <div class="btn-toolbar" role="toolbar" style="text-align: left;">
+
+                <button type="button" class="btn btn-default btn" (click)="addHandler()">
+                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add
+                </button>
+                <button type="button" class="btn btn-default btn" (click)="addHandler()">
+                    <span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Edit
+                </button>
+                <button type="button" class="btn btn-default btn" (click)="addHandler()">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Delete
+                </button>
+                <button type="button" class="btn btn-default btn" (click)="addHandler()">
+                    <span class="glyphicon glyphicon-export" aria-hidden="true"></span> Export
+                </button>
+                <button type="button" class="btn btn-default" (click)="addHandler()">
+                    <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> Refresh
+                </button>
+            </div>
+
+            <!-- <kendo-toolbar>
                 <kendo-toolbar-buttongroup [selection]="'single'">
                     <kendo-toolbar-button [toggleable]="true" [icon]="'add'" [text]="'Create'" title="Create New Site" (click)="addHandler()">
                     </kendo-toolbar-button>
@@ -17,29 +37,21 @@
                         [text]="'Export'" title="Export to Excel"></kendo-toolbar-button>
                 </kendo-toolbar-buttongroup>
 
-            </kendo-toolbar>
+            </kendo-toolbar> -->
 
             <!-- <kendo-grid #grid="kendoGrid" [kendoGridBinding]="gridData" [pageSize]="10" [buttonCount]=5
                 [pageable]="true" [sortable]="true" [filterable]="true" [groupable]="true" [height]="550"
                 [selectable]="true"> -->
 
-                <kendo-grid #grid
-                [data]="view | async"
-                [kendoGridBinding]="gridData"
-                [height]="550"
-                [filterable]="true" [groupable]="true" [sortable]="true"
-                [pageSize]="gridState.take" [skip]="gridState.skip" [sort]="gridState.sort"
-                [pageable]="true" [sortable]="true"
-                (dataStateChange)="onStateChange($event)"
-                (edit)="editHandler($event)" (cancel)="cancelHandler($event)"
-                (save)="saveHandler($event)" (remove)="removeHandler($event)"
-                (add)="addHandler($event)"
-                [navigable]="true"
-                >
+            <kendo-grid #grid [data]="view | async" [kendoGridBinding]="gridData" [height]="550" [filterable]="true"
+                [groupable]="true" [sortable]="true" [pageSize]="gridState.take" [skip]="gridState.skip"
+                [sort]="gridState.sort" [pageable]="true" [sortable]="true" (dataStateChange)="onStateChange($event)"
+                (edit)="editHandler($event)" (cancel)="cancelHandler($event)" (save)="saveHandler($event)"
+                (remove)="removeHandler($event)" (add)="addHandler($event)" [navigable]="true">
 
-                <ng-template kendoGridToolbarTemplate>
+                <!-- <ng-template kendoGridToolbarTemplate>
                     <button kendoGridAddCommand>Add new</button>
-                </ng-template>
+                </ng-template> -->
 
                 <kendo-grid-checkbox-column showSelectAll="true" [width]="30"></kendo-grid-checkbox-column>
                 <kendo-grid-column title="Site Code" field="SiteCode" [width]="140"></kendo-grid-column>
@@ -53,11 +65,10 @@
                         <button kendoGridEditCommand [primary]="true">Edit</button>
                         <button kendoGridRemoveCommand>Delete</button>
                     </ng-template>
-                </kendo-grid-command-column>                
+                </kendo-grid-command-column>
             </kendo-grid>
 
-            <kendo-grid-edit-form [model]="editDataItem" [isNew]="isNew"
-                (save)="saveHandler($event)"
+            <kendo-grid-edit-form [model]="editDataItem" [isNew]="isNew" (save)="saveHandler($event)"
                 (cancel)="cancelHandler()">
             </kendo-grid-edit-form>
 

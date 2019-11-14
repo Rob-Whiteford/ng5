@@ -1,11 +1,11 @@
-<kendo-dialog *ngIf="active" [width]="700" [height]="450" (close)="closeForm()">
+<kendo-dialog *ngIf="active" [width]="540" [height]="510" (close)="closeForm()">
     <kendo-dialog-titlebar>
         {{ isNew ? 'Scan Items' : 'Scan Items' }}
     </kendo-dialog-titlebar>
 
     <form novalidate [formGroup]="editForm">
 
-        <div style="width:400px">
+        <div style="width:500px">
             <zxing-scanner height [torch]="torchEnabled" [(device)]="currentDevice" (scanSuccess)="onCodeResult($event)"
             [formats]="formatsEnabled" [tryHarder]="tryHarder" (permissionResponse)="onHasPermission($event)"
             (camerasFound)="onCamerasFound($event)" (torchCompatible)="onTorchCompatible($event)"></zxing-scanner>

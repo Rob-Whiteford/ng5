@@ -2,17 +2,32 @@
     style="display:flex; flex-direction: row; justify-content: center; align-items: center">
     <div class="col" style="text-align: center;  height: 650px;">
         <div>
-            <kendo-toolbar>
+
+            <div class="btn-toolbar" role="toolbar"  style="text-align: left;">
+                <button type="button" class="btn btn-default" (click)="addHandler()">
+                        <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> Refresh
+                </button>
+                <button type="button" class="btn btn-default btn" (click)="addHandler()">
+                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Create
+                </button>
+                <button type="button" class="btn btn-default btn" (click)="addHandler()">
+                        <span class="glyphicon glyphicon-barcode" aria-hidden="true"></span> Scan
+                </button>
+            </div>
+            <!-- <kendo-toolbar>
                 <p>View Waybills</p>
                 <kendo-toolbar-buttongroup [selection]="'single'">
                     <kendo-toolbar-button [toggleable]="true" [icon]="'refresh'" title="Refresh the current page"
-                        [text]="'Refresher'"></kendo-toolbar-button>
-                    <kendo-toolbar-button [toggleable]="true" [icon]="'new'" [text]="'Create'" (click)="addHandler()"
-                        title="Delete the selected waybills"></kendo-toolbar-button>
-                    <kendo-toolbar-button [toggleable]="true" [icon]="'scan'" [text]="'Scan'" title="Scan"  (click)="addHandler()">
+                        [text]="'Refresh'"></kendo-toolbar-button>
+                    <kendo-toolbar-button [toggleable]="true" [icon]="'add'" [text]="'Create'" (click)="addHandler()"
+                        title="Creat new manifest"></kendo-toolbar-button>
+                    <kendo-toolbar-button [toggleable]="true" [icon]="'scanner'" [text]="'Scan'"
+                        class="k-icon k-i-file-add" title="Scan" (click)="addHandler()">
+                        <span class="k-icon k-i-file-add" style="font-size: 16px;"></span>
                     </kendo-toolbar-button>
+                    <button type="button" class="btn btn-labeled btn-success">Test</button>
                 </kendo-toolbar-buttongroup>
-            </kendo-toolbar>
+            </kendo-toolbar> -->
             <kendo-grid [kendoGridBinding]="gridData" [pageSize]="10" [pageable]="true" [sortable]="true"
                 [filterable]="true" [groupable]="true" [height]="550" [selectable]="true">
                 <kendo-grid-checkbox-column showSelectAll="true" [width]="25"></kendo-grid-checkbox-column>

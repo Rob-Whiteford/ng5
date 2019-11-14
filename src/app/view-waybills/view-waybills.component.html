@@ -2,15 +2,15 @@
     style="display:flex; flex-direction: row; justify-content: center; align-items: center">
     <div class="col" style="text-align: center;  height: 650px;">
         <div>
-            <kendo-toolbar>
-                    <p>View Waybills</p>
+            <!-- <kendo-toolbar>
+                    <p>View Waybills</p> -->
                 <!-- <kendo-toolbar-button [text]="'Button'"></kendo-toolbar-button>
                 <kendo-toolbar-button [text]="'Toggle'" [toggleable]="true"></kendo-toolbar-button>
                 <kendo-toolbar-splitbutton [text]="'Split Button'" [data]="splitButtonData">
                 </kendo-toolbar-splitbutton>
                 <kendo-toolbar-dropdownbutton [text]="'DropDownButton'" [data]="dropdownButtonData">
                 </kendo-toolbar-dropdownbutton> -->
-                <kendo-toolbar-buttongroup [selection]="'single'">
+                <!-- <kendo-toolbar-buttongroup [selection]="'single'">
                     <kendo-toolbar-button [toggleable]="true" [icon]="'refresh'" title="Refresh the current page"
                         [text]="'Refresh'"></kendo-toolbar-button>
                     <kendo-toolbar-button [toggleable]="true" [icon]="'delete'" [text]="'Delete'"
@@ -18,7 +18,24 @@
                     <kendo-toolbar-button [toggleable]="true" [icon]="'preview'" [text]="'View'"></kendo-toolbar-button>
                     <kendo-toolbar-button [toggleable]="true" [icon]="'print'" [text]="'Print'"></kendo-toolbar-button>
                 </kendo-toolbar-buttongroup>
-            </kendo-toolbar>
+            </kendo-toolbar> -->
+
+            <div class="btn-toolbar" role="toolbar" style="text-align: left;">
+
+                    <button type="button" class="btn btn-default btn" (click)="addHandler()">
+                        <span class="glyphicon glyphicon-print" aria-hidden="true"></span> Print
+                    </button>
+                    <button type="button" class="btn btn-default btn" (click)="addHandler()">
+                        <span class="glyphicon glyphicon-list" aria-hidden="true"></span> View
+                    </button>
+                    <button type="button" class="btn btn-default btn" (click)="addHandler()">
+                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Delete
+                    </button>
+                    <button type="button" class="btn btn-default" (click)="addHandler()">
+                        <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> Refresh
+                    </button>
+                </div>
+
             <kendo-grid [kendoGridBinding]="gridData" [pageSize]="10" [pageable]="true" [sortable]="true"
                 [filterable]="true" [groupable]="true" [height]="550" [selectable]="true">
                 <kendo-grid-checkbox-column showSelectAll="true" [width]="25"></kendo-grid-checkbox-column>

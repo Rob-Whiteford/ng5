@@ -33,6 +33,8 @@ import { EditSiteComponent } from './edit-site/edit-site.component';
 import { DialogsModule } from '@progress/kendo-angular-dialog';
 import { CreateManifestComponent } from './create-manifest/create-manifest.component';
 import { ScanToManifestComponent } from './scan-to-manifest/scan-to-manifest.component';
+import { SiteDetailsComponent } from './site-details/site-details.component';
+import { ManifestDetailsComponent } from './manifest-details/manifest-details.component';
 
 
 @NgModule({
@@ -54,7 +56,9 @@ import { ScanToManifestComponent } from './scan-to-manifest/scan-to-manifest.com
     ViewSitesComponent,
     EditSiteComponent,
     CreateManifestComponent,
-    ScanToManifestComponent
+    ScanToManifestComponent,
+    SiteDetailsComponent,
+    ManifestDetailsComponent
   ],
   imports: [
     BrowserModule,

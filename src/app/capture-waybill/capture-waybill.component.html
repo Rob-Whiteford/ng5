@@ -1,56 +1,52 @@
-<div class="container color-dark">
-    <div class="col">
-        <p>Fill in all waybill details</p>
-    </div>
-</div>
-<br>
-
 <div class="container color-light"
     style="display:flex; flex-direction: row; justify-content: center; align-items: center">
     <div class="col" style="text-align: center;  height: 500px;">
 
-        <div class="wb_grid_data_6col">
-            <div>
-                Waybill Date:&nbsp;
-            </div>
-            <div>
-                <kendo-datepicker class="txt" [format]="'yyyy/MM/dd'" [value]="DefaultWaybillDate">
-                </kendo-datepicker>
-            </div>
-            <div>
-                Waybill Number:&nbsp;
-            </div>
-            <div><input type="text" class="txt" name="item" placeholder="Waybill Number..." #WaybillNumber>
+        <div class="row" style="text-align: left;">
 
+            <div class="col-sm-1">
+                Number:&nbsp;
             </div>
-            <div>
-                Customer Ref.:&nbsp;
+            <div class="col-sm-3">
+                <input kendoTextBox class="txt" name="item" placeholder="Waybill Number..." #WaybillNumber>
             </div>
-            <div><input type="text" class="txt" name="item" placeholder="Reference Number..." #WaybillNumber>
-
+            <div class="col-sm-1">
+                    Date:&nbsp;
+                </div>
+                <div class="col-sm-3">
+                    <kendo-datepicker class="txt" [format]="'yyyy/MM/dd'" [value]="DefaultWaybillDate">
+                    </kendo-datepicker>
+                </div>            
+            <div class="col-sm-1">
+                Ref.:&nbsp;
             </div>
-            <div>
+            <div class="col-sm-3">
+                <input kendoTextBox class="txt" name="item" placeholder="Reference Number..." #WaybillNumber>
+            </div>
+        </div>
+        <div class="row" style="text-align: left;">
+            <div class="col-sm-1">
                 Sender:&nbsp;
             </div>
-            <div>
+            <div class="col-sm-3">
                 <kendo-dropdownlist [popupSettings]="{ height: 300, width: 300 }"
                     [placeholder]="'Start typing to see sites...'" #SenderList [filterable]="true" [data]="siteListData"
                     [textField]="'SiteName'" [valueField]="'SiteCode'">
                 </kendo-dropdownlist>
             </div>
-            <div>
+            <div class="col-sm-1">
                 Receiver:&nbsp;
             </div>
-            <div>
+            <div class="col-sm-3">
                 <kendo-dropdownlist [popupSettings]="{ height: 300, width: 300 }"
                     [placeholder]="'Start typing to see sites...'" #ReceiverList [filterable]="true"
                     [data]="siteListData" [textField]="'SiteName'" [valueField]="'SiteCode'">
                 </kendo-dropdownlist>
             </div>
-            <div>
-                Service Type:&nbsp;
+            <div class="col-sm-1">
+                Service:&nbsp;
             </div>
-            <div>
+            <div class="col-sm-3">
                 <kendo-dropdownlist [data]="serviceTypes" [textField]="'Code'" [valueField]="'Description'">
                 </kendo-dropdownlist>
             </div>
@@ -65,7 +61,7 @@
                     (add)="addHandler($event, myForm)" [pageSize]="gridState.take" [skip]="gridState.skip"
                     [sort]="gridState.sort" [navigable]="true">
 
-                    <ng-template kendoGridToolbarTemplate >
+                    <ng-template kendoGridToolbarTemplate>
                         <button class="k-grid-toolbar" kendoGridAddCommand>Add new</button>
                         <!-- <button class='k-button' (click)="saveChanges(grid);">Save Changes</button>
                     <button class='k-button' (click)="cancelChanges(grid);">Cancel Changes</button> -->
@@ -133,14 +129,11 @@
 
         <!-- </div> -->
         <br>
-        <div class="wb_grid_footer">
-            <div>
-                <input type="submit" class="btn" value="Refresh Grid" (click)="refreshGrid()">
-            </div>
-            <div>
+        <div class="row">
+            <div class="col-sm-2">
                 <input type="submit" class="btn" value="Cancel" (click)="refreshPage()">
             </div>
-            <div>
+            <div class="col-sm-2">
                 <input type="submit" class="btn" value="Save" (click)="refreshPage()">
             </div>
         </div>

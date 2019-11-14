@@ -11,6 +11,8 @@ import { ScanBarcodeComponent } from './scan-barcode/scan-barcode.component';
 import { DemoComponent } from './demo/demo.component';
 import { ViewSitesComponent } from './view-sites/view-sites.component';
 import { CreateManifestComponent } from './create-manifest/create-manifest.component';
+import { SiteDetailsComponent } from './site-details/site-details.component';
+import { ManifestDetailsComponent } from './manifest-details/manifest-details.component';
 
 const routes: Routes = [
   {
@@ -52,7 +54,15 @@ const routes: Routes = [
   {
     path: 'view-sites',
     component: ViewSitesComponent
-  },      
+  },
+  {
+    path: 'site-details',
+    component: SiteDetailsComponent
+  },  
+  {
+    path: 'manifest_details',
+    component: ManifestDetailsComponent
+  },        
   {
     path: 'fetchdata',
     component: FetchDataComponent
