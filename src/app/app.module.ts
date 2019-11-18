@@ -35,6 +35,8 @@ import { CreateManifestComponent } from './create-manifest/create-manifest.compo
 import { ScanToManifestComponent } from './scan-to-manifest/scan-to-manifest.component';
 import { SiteDetailsComponent } from './site-details/site-details.component';
 import { ManifestDetailsComponent } from './manifest-details/manifest-details.component';
+import { OptionsPrintingComponent } from './options-printing/options-printing.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -58,7 +60,9 @@ import { ManifestDetailsComponent } from './manifest-details/manifest-details.co
     CreateManifestComponent,
     ScanToManifestComponent,
     SiteDetailsComponent,
-    ManifestDetailsComponent
+    ManifestDetailsComponent,
+    OptionsPrintingComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

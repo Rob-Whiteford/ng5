@@ -1,27 +1,29 @@
 <div class="container color-light"
     style="display:flex; flex-direction: row; justify-content: center; align-items: center">
     <div class="col" style="text-align: center;">
-        <p>View Sites</p>
+
+        <div class="row">
+            <div class="col-xl-12" style="text-align: center;">
+                <label class="heading">View Sites</label>
+            </div>
+        </div>
 
         <div style="height: 600px;text-align: center">
-
-
             <div class="btn-toolbar" role="toolbar" style="text-align: left;">
-
                 <button type="button" class="btn btn-default btn" (click)="addHandler()">
-                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add
+                    <i class='far fa-plus-square'></i> Add
                 </button>
                 <button type="button" class="btn btn-default btn" (click)="addHandler()">
-                    <span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Edit
+                    <i class='fas fa-edit'></i> Edit
                 </button>
                 <button type="button" class="btn btn-default btn" (click)="addHandler()">
-                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Delete
+                    <i class='fa fa-remove'></i> Delete
                 </button>
                 <button type="button" class="btn btn-default btn" (click)="addHandler()">
-                    <span class="glyphicon glyphicon-export" aria-hidden="true"></span> Export
+                    <i class='fas fa-file-export'></i> Export
                 </button>
                 <button type="button" class="btn btn-default" (click)="addHandler()">
-                    <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> Refresh
+                    <i class='fa fa-refresh'></i> Refresh
                 </button>
             </div>
 
@@ -53,7 +55,7 @@
                     <button kendoGridAddCommand>Add new</button>
                 </ng-template> -->
 
-                <kendo-grid-checkbox-column showSelectAll="true" [width]="30"></kendo-grid-checkbox-column>
+                <kendo-grid-checkbox-column showSelectAll="true" [width]="35"></kendo-grid-checkbox-column>
                 <kendo-grid-column title="Site Code" field="SiteCode" [width]="140"></kendo-grid-column>
                 <kendo-grid-column title="Site Name" field="SiteName" [width]="120"></kendo-grid-column>
                 <kendo-grid-column title="Town" field="Address3" [width]="100"></kendo-grid-column>

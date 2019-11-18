@@ -1,20 +1,93 @@
 <div class="container color-light"
     style="display:flex; flex-direction: row; justify-content: center; align-items: center">
-    <div class="col" style="text-align: center;  height: 650px;">
-        <div>
+    <div class="col" style="text-align: center;  height: 780px;">
 
-            <div class="btn-toolbar" role="toolbar"  style="text-align: left;">
-                <button type="button" class="btn btn-default" (click)="addHandler()">
-                        <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> Refresh
-                </button>
-                <button type="button" class="btn btn-default btn" (click)="addHandler()">
-                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Create
-                </button>
-                <button type="button" class="btn btn-default btn" (click)="addHandler()">
-                        <span class="glyphicon glyphicon-barcode" aria-hidden="true"></span> Scan
-                </button>
+        <div class="row">
+            <div class="col-xl-12" style="text-align: center;">
+                <label class="heading">Create Manifest</label>
             </div>
-            <!-- <kendo-toolbar>
+        </div>
+
+        <br>
+
+        <div class="row" style="text-align: left;">
+            <div class="col-sm-1">
+                Number:&nbsp;
+            </div>
+            <div class="col-sm-3">
+                <input class="txt" name="item" placeholder="Manifest Number..." #ManifestNumber>
+            </div>
+            <div class="col-sm-1">
+                Date:&nbsp;
+            </div>
+            <div class="col-sm-3">
+                <kendo-datepicker class="txt" [format]="'yyyy/MM/dd'" [value]="DefaultManifestDate">
+                </kendo-datepicker>
+            </div>
+            <div class="col-sm-1">
+                Depot:&nbsp;
+            </div>
+            <div class="col-sm-3">
+                <select class="dropdown" name="waybillPrinter" form="waybillPrinter">
+                    <option selected value="JNB">JNB</option>
+                    <option value="DBN">DBN</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- row spacer -->
+        <div class="row">
+            <div class="col-sm-12">
+                <div style="height:0px"></div>
+            </div>
+        </div>
+        <!-- row spacer -->
+
+        <div class="row" style="text-align: left;  margin-top:20px;">
+            <div class="col-sm-1">
+                Comments:&nbsp;
+            </div>
+            <div class="col-sm-3">
+                <input class="txt" name="item" placeholder="Comments..." #Comments style="text-align: left;width:540px">
+            </div>
+        </div>
+        <br>
+
+        <!-- Modal Form Start -->
+        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Form End -->
+
+        <div class="btn-toolbar" role="toolbar" style="text-align: left;">
+            <button type="button" class="btn btn-default btn" (click)="addHandler()">
+                <i class='far fa-plus-square'></i> Create
+            </button>
+            <button type="button" class="btn btn-default btn" (click)="openFormModal()">
+                <i class='fas fa-barcode'></i> Scan
+            </button>
+            <button type="button" class="btn btn-default" (click)="addHandler()">
+                <i class="fa fa-refresh"></i> Refresh
+            </button>
+        </div>
+        <!-- <kendo-toolbar>
                 <p>View Waybills</p>
                 <kendo-toolbar-buttongroup [selection]="'single'">
                     <kendo-toolbar-button [toggleable]="true" [icon]="'refresh'" title="Refresh the current page"
@@ -28,23 +101,23 @@
                     <button type="button" class="btn btn-labeled btn-success">Test</button>
                 </kendo-toolbar-buttongroup>
             </kendo-toolbar> -->
-            <kendo-grid [kendoGridBinding]="gridData" [pageSize]="10" [pageable]="true" [sortable]="true"
-                [filterable]="true" [groupable]="true" [height]="550" [selectable]="true">
-                <kendo-grid-checkbox-column showSelectAll="true" [width]="25"></kendo-grid-checkbox-column>
-                <kendo-grid-column field="WaybillNumber" title="Waybill Number" [width]="100"></kendo-grid-column>
-                <kendo-grid-column field="WaybillDate" title="Waybill Date" [width]="100"></kendo-grid-column>
-                <kendo-grid-column field="Sender" title="Sender" [width]="130"></kendo-grid-column>
-                <kendo-grid-column field="Receiver" title="Receiver" [width]="130"></kendo-grid-column>
-                <kendo-grid-column field="ServiceType" title="Service Type" [width]="100"></kendo-grid-column>
-                <kendo-grid-column field="CustomerReference" title="Customer Reference" [width]="100">
-                </kendo-grid-column>
-            </kendo-grid>
+        <kendo-grid [kendoGridBinding]="gridData" [pageSize]="10" [pageable]="true" [sortable]="true"
+            [filterable]="true" [groupable]="true" [height]="550" [selectable]="true">
+            <kendo-grid-checkbox-column showSelectAll="true" [width]="30"></kendo-grid-checkbox-column>
+            <kendo-grid-column field="WaybillNumber" title="Waybill Number" [width]="100"></kendo-grid-column>
+            <kendo-grid-column field="WaybillDate" title="Waybill Date" [width]="100"></kendo-grid-column>
+            <kendo-grid-column field="Sender" title="Sender" [width]="130"></kendo-grid-column>
+            <kendo-grid-column field="Receiver" title="Receiver" [width]="130"></kendo-grid-column>
+            <kendo-grid-column field="ServiceType" title="Service Type" [width]="100"></kendo-grid-column>
+            <kendo-grid-column field="CustomerReference" title="Customer Reference" [width]="100">
+            </kendo-grid-column>
+        </kendo-grid>
 
-            <kendo-grid-scan-to-manifest-form [model]="newScanData" [isNew]="isNew" (save)="saveHandler($event)"
-                (cancel)="cancelHandler()">
-            </kendo-grid-scan-to-manifest-form>
+        <kendo-grid-scan-to-manifest-form [model]="newScanData" [isNew]="isNew" (save)="saveHandler($event)"
+            (cancel)="cancelHandler()">
+        </kendo-grid-scan-to-manifest-form>
 
-        </div>
+
     </div>
 </div>
 <div>

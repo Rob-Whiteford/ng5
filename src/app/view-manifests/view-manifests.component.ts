@@ -46,7 +46,7 @@ export class ViewManifestsComponent  {
   getManifests(): void {
     this._callService.getManifestList().subscribe(data => {
       if (data) {
-        //this.manifests  = data.Manifest;
+        this.manifests  = data.Manifest;
         this.isLoaded = true;
         this.gridRowData = this.manifests;
         this.gridData = this.manifests;

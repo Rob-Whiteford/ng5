@@ -47,7 +47,7 @@ export class ViewWaybillsComponent implements OnInit {
   getWaybills(): void {
     this._callService.getWaybillList().subscribe(data => {
       if (data) {
-        //this.waybills  = data.Waybill;
+        this.waybills  = data.Waybill;
         this.isLoaded = true;
         this.gridData = this.waybills;
       }

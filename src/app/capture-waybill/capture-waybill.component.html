@@ -1,9 +1,18 @@
 <div class="container color-light"
     style="display:flex; flex-direction: row; justify-content: center; align-items: center">
-    <div class="col" style="text-align: center;  height: 500px;">
+
+    <div class="container">
+
+
+        <div class="row">
+            <div class="col-xl-12" style="text-align: center;">
+                <label class="heading">Capture Waybill</label>
+            </div>
+        </div>
+
+        <br>
 
         <div class="row" style="text-align: left;">
-
             <div class="col-sm-1">
                 Number:&nbsp;
             </div>
@@ -11,12 +20,12 @@
                 <input kendoTextBox class="txt" name="item" placeholder="Waybill Number..." #WaybillNumber>
             </div>
             <div class="col-sm-1">
-                    Date:&nbsp;
-                </div>
-                <div class="col-sm-3">
-                    <kendo-datepicker class="txt" [format]="'yyyy/MM/dd'" [value]="DefaultWaybillDate">
-                    </kendo-datepicker>
-                </div>            
+                Date:&nbsp;
+            </div>
+            <div class="col-sm-3">
+                <kendo-datepicker class="txt" [format]="'yyyy/MM/dd'" [value]="DefaultWaybillDate">
+                </kendo-datepicker>
+            </div>
             <div class="col-sm-1">
                 Ref.:&nbsp;
             </div>
@@ -24,6 +33,15 @@
                 <input kendoTextBox class="txt" name="item" placeholder="Reference Number..." #WaybillNumber>
             </div>
         </div>
+
+        <!-- row spacer -->
+        <div class="row">
+            <div class="col-sm-12">
+                <div style="height:5px"></div>
+            </div>
+        </div>
+        <!-- row spacer -->
+
         <div class="row" style="text-align: left;">
             <div class="col-sm-1">
                 Sender:&nbsp;
@@ -51,6 +69,14 @@
                 </kendo-dropdownlist>
             </div>
         </div>
+
+        <!-- row spacer -->
+        <div class="row">
+            <div class="col-sm-12">
+                <div style="height:5px"></div>
+            </div>
+        </div>
+        <!-- row spacer -->
 
         <div id="grid">
             <form novalidate #myForm="ngForm">
@@ -130,11 +156,10 @@
         <!-- </div> -->
         <br>
         <div class="row">
-            <div class="col-sm-2">
-                <input type="submit" class="btn" value="Cancel" (click)="refreshPage()">
-            </div>
-            <div class="col-sm-2">
-                <input type="submit" class="btn" value="Save" (click)="refreshPage()">
+            <div class="col-xl-3 offset-xl-1"></div>
+            <div class="col-xl-2 offset-xl-1">
+                <button type="button" class="btn"> Save </button>
+                <button type="button" class="btn"> Cancel </button>
             </div>
         </div>
 

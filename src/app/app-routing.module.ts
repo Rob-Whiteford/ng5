@@ -13,11 +13,17 @@ import { ViewSitesComponent } from './view-sites/view-sites.component';
 import { CreateManifestComponent } from './create-manifest/create-manifest.component';
 import { SiteDetailsComponent } from './site-details/site-details.component';
 import { ManifestDetailsComponent } from './manifest-details/manifest-details.component';
+import { OptionsPrintingComponent } from './options-printing/options-printing.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   {
     path: '',
     component: HomeComponent
+  },
+  {
+    path: 'login',
+    component: LoginComponent
   },
   {
     path: 'about/:id',
@@ -60,9 +66,13 @@ const routes: Routes = [
     component: SiteDetailsComponent
   },  
   {
-    path: 'manifest_details',
+    path: 'manifest-details',
     component: ManifestDetailsComponent
-  },        
+  },  
+  {
+    path: 'options-printing',
+    component: OptionsPrintingComponent
+  },         
   {
     path: 'fetchdata',
     component: FetchDataComponent

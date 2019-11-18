@@ -15,8 +15,8 @@
 input.txt{
     border: 0;
     padding: 1em;
-    width: 170x;
-    height: 25px;
+    width: 170px;
+    height: 20px;
     text-align: left;
 }
 .heading{
@@ -26,17 +26,27 @@ input.txt{
     border: 0;
     padding: 1em;
     width: 100px;
-    height: 25px;
+    height: 20px;
     text-align: left;
 }
 .txt-wide{
     border: 0;
     padding: 1em;
     width: 250px;
-    height: 25px;
+    height: 20px;
     text-align: left;
 }
-input.btn{
+
+.dropdown{
+    border: 0;
+    /* padding: 1em; */
+    width: 170px;
+    height: 25px;
+    text-align: left;
+    color: #656565;
+}
+
+/* input.btn{
     border: 0;
     display: block;
     padding: 1em 3em;
@@ -44,7 +54,20 @@ input.btn{
     color: #003A61;
     margin-bottom: 1em;
     cursor: pointer;
+} */
+
+.btn{
+    background: #f6f6f6;
+    border: none;
+    border-radius:4px;
+    box-shadow: none;
+    margin-left: 1px;
+    text-shadow: none;
+    outline: none !important;
+    cursor: pointer;
+    color: #000000;
 }
+
 .life-container{
     background: #3FA0E1;
     padding: .5em;
@@ -58,3 +81,69 @@ input.btn{
   }
 
   .grid-top-buffer { margin-top:5px; }
+
+
+
+  .login-clean{
+    background: #2e9ce6;
+      padding: 80px;
+  }
+
+  .login-clean form {
+    max-width: 320px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #57B3F1;
+    padding: 40px;
+    border-radius: 4px;
+    color: #505e6c;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0,1);
+}
+
+.login-clean illustration{
+    text-align: center;
+    padding: 0 0 20px;
+    font-size: 100px;
+    color: rgba(244, 71, 107);
+}
+
+
+.login-clean form .form-control {
+    background: #ffffff;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+    color: inherit;
+    text-indent: 8px;
+    height: 42px;
+}
+
+.login-clean form .btn-primary{
+    background: #f4476b;
+    border: none;
+    border-radius:4px;
+    box-shadow: none;
+    margin-top: 26px;
+    text-shadow: none;
+    outline: none !important;
+}
+
+.login-clean form .btn-primary:hover, .login-clean form .btn-primary:active
+{
+    background: #eb3b60;
+}
+
+.login-clean form .btn-primary:active{
+    transform: translateY(1px);
+}
+
+.login-clean form .forgot{
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: #ffffff;
+    opacity: 0.9;
+    text-decoration: none;
+}

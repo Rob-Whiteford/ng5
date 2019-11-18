@@ -1,16 +1,40 @@
 <div class="container color-light"
     style="display:flex; flex-direction: row; justify-content: center; align-items: center">
+
     <div class="col" style="text-align: center;  height: 650px;">
+
+        <div class="row">
+            <div class="col-xl-12" style="text-align: center;">
+                <label class="heading">View Waybills</label>
+            </div>
+        </div>
+
         <div>
+
+            <div class="btn-toolbar" role="toolbar" style="text-align: left;">
+                <button type="button" class="btn btn-default btn" (click)="addHandler()">
+                        <i class='fas fa-print'></i> Print
+                </button>
+                <button type="button" class="btn btn-default btn" (click)="addHandler()">
+                        <i class='fa fa-wpforms'></i> View
+                </button>
+                <button type="button" class="btn btn-default btn" (click)="addHandler()">
+                        <i class='fa fa-remove'></i> Delete
+                </button>
+                <button type="button" class="btn btn-default" (click)="addHandler()">
+                        <i class='fa fa-refresh'></i> Refresh
+                </button>
+            </div>
+
             <!-- <kendo-toolbar>
                     <p>View Waybills</p> -->
-                <!-- <kendo-toolbar-button [text]="'Button'"></kendo-toolbar-button>
+            <!-- <kendo-toolbar-button [text]="'Button'"></kendo-toolbar-button>
                 <kendo-toolbar-button [text]="'Toggle'" [toggleable]="true"></kendo-toolbar-button>
                 <kendo-toolbar-splitbutton [text]="'Split Button'" [data]="splitButtonData">
                 </kendo-toolbar-splitbutton>
                 <kendo-toolbar-dropdownbutton [text]="'DropDownButton'" [data]="dropdownButtonData">
                 </kendo-toolbar-dropdownbutton> -->
-                <!-- <kendo-toolbar-buttongroup [selection]="'single'">
+            <!-- <kendo-toolbar-buttongroup [selection]="'single'">
                     <kendo-toolbar-button [toggleable]="true" [icon]="'refresh'" title="Refresh the current page"
                         [text]="'Refresh'"></kendo-toolbar-button>
                     <kendo-toolbar-button [toggleable]="true" [icon]="'delete'" [text]="'Delete'"
@@ -20,25 +44,12 @@
                 </kendo-toolbar-buttongroup>
             </kendo-toolbar> -->
 
-            <div class="btn-toolbar" role="toolbar" style="text-align: left;">
 
-                    <button type="button" class="btn btn-default btn" (click)="addHandler()">
-                        <span class="glyphicon glyphicon-print" aria-hidden="true"></span> Print
-                    </button>
-                    <button type="button" class="btn btn-default btn" (click)="addHandler()">
-                        <span class="glyphicon glyphicon-list" aria-hidden="true"></span> View
-                    </button>
-                    <button type="button" class="btn btn-default btn" (click)="addHandler()">
-                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Delete
-                    </button>
-                    <button type="button" class="btn btn-default" (click)="addHandler()">
-                        <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> Refresh
-                    </button>
-                </div>
+
 
             <kendo-grid [kendoGridBinding]="gridData" [pageSize]="10" [pageable]="true" [sortable]="true"
                 [filterable]="true" [groupable]="true" [height]="550" [selectable]="true">
-                <kendo-grid-checkbox-column showSelectAll="true" [width]="25"></kendo-grid-checkbox-column>
+                <kendo-grid-checkbox-column showSelectAll="true" [width]="30"></kendo-grid-checkbox-column>
                 <kendo-grid-column field="WaybillNumber" title="Waybill Number" [width]="100"></kendo-grid-column>
                 <kendo-grid-column field="WaybillDate" title="Waybill Date" [width]="100"></kendo-grid-column>
                 <kendo-grid-column field="Sender" title="Sender" [width]="130"></kendo-grid-column>
@@ -49,6 +60,7 @@
             </kendo-grid>
 
         </div>
+
     </div>
 </div>
 <div>

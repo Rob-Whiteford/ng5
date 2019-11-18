@@ -1,24 +1,36 @@
 <div class="container color-light"
     style="display:flex; flex-direction: row; justify-content: center; align-items: center">
-    <div class="col" style="text-align: center;">
-        <p>View Manifests</p>
 
-        <div style="height: 600px;text-align: center">
+    <div class="col" style="text-align: center;  height: 650px;">
 
-            <kendo-toolbar>
+        <div class="row">
+            <div class="col-xl-12" style="text-align: center;">
+                <label class="heading">View Manifests</label>
+            </div>
+        </div>
+
+        <div>
+
+            <div class="btn-toolbar" role="toolbar" style="text-align: left;">
+                <button type="button" class="btn btn-default btn" (click)="addHandler()">
+                        <i class='far fa-plus-square'></i> Create
+                </button>
+                <button type="button" class="btn btn-default btn" (click)="addHandler()">
+                        <i class='fas fa-print'></i> Print
+                </button>
+                <button type="button" class="btn btn-default" (click)="addHandler()">
+                        <i class='fa fa-refresh'></i> Refresh
+                </button>
+            </div>
+
+            <!-- <kendo-toolbar>
                 <kendo-toolbar-button [text]="'Add new'"></kendo-toolbar-button>
                 <kendo-toolbar-button [text]="'Toggle'" [toggleable]="true"></kendo-toolbar-button>
                 <kendo-toolbar-splitbutton [text]="'Print'" [data]="splitButtonData">
                 </kendo-toolbar-splitbutton>
                 <kendo-toolbar-dropdownbutton [text]="'DropDownButton'" [data]="dropdownButtonData">
                 </kendo-toolbar-dropdownbutton>
-                <!-- <kendo-toolbar-buttongroup [selection]="'single'">
-                    <kendo-toolbar-button [toggleable]="true" [icon]="'align-left'"></kendo-toolbar-button>
-                    <kendo-toolbar-button [toggleable]="true" [icon]="'align-center'"></kendo-toolbar-button>
-                    <kendo-toolbar-button [toggleable]="true" [icon]="'align-right'"></kendo-toolbar-button>
-                    <kendo-toolbar-button [toggleable]="true" [icon]="'align-justify'"></kendo-toolbar-button>
-                </kendo-toolbar-buttongroup> -->
-            </kendo-toolbar>
+            </kendo-toolbar> -->
 
             <kendo-grid [kendoGridBinding]="gridData" [pageSize]="10" [pageable]="true" [sortable]="true"
                 [filterable]="true" [groupable]="true" [height]="550" [selectable]="true">
@@ -29,7 +41,9 @@
                 <kendo-grid-column field="Comment" [width]="130"></kendo-grid-column>
                 <kendo-grid-column field="Status" [width]="130"></kendo-grid-column>
             </kendo-grid>
+
         </div>
+
     </div>
 </div>
 <div>
